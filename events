@@ -1,0 +1,868 @@
+07-30 00:13:58.805   559   559 I auditd  : type=2000 audit(0.0:1): initialized
+07-30 00:14:00.039   559   559 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+07-30 00:14:00.039   559   559 I auditd  : type=1404 audit(0.0:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+07-30 00:14:01.734   561   561 I auditd  : SELinux: Loaded service_contexts from:
+07-30 00:14:01.735   561   561 I auditd  :     /system/etc/selinux/plat_service_contexts
+07-30 00:14:01.735   563   563 I auditd  : SELinux: Loaded service_contexts from:
+07-30 00:14:01.736   563   563 I auditd  :     /vendor/etc/selinux/vndservice_contexts
+07-30 00:14:02.029     1     1 I auditd  : type=1400 audit(0.0:4): avc: granted { open } for comm="init" path="/dev/ipa" dev="tmpfs" ino=4491 scontext=u:r:init:s0 tcontext=u:object_r:ipa_dev:s0 tclass=chr_file
+07-30 00:14:03.079   703   703 I auditd  : type=1400 audit(0.0:5): avc: denied { read write } for comm="android.hardwar" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-30 00:14:03.139   698   698 I auditd  : type=1400 audit(0.0:6): avc: denied { read } for comm="android.hardwar" name="name" dev="sysfs" ino=34486 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+07-30 00:14:03.139   698   698 I auditd  : type=1400 audit(0.0:7): avc: denied { read } for comm="android.hardwar" name="name" dev="sysfs" ino=35078 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+07-30 00:14:03.249   698   698 I auditd  : type=1400 audit(0.0:8): avc: denied { read write } for comm="android.hardwar" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-30 00:14:03.399   808   808 I auditd  : type=1400 audit(0.0:9): avc: denied { read write } for comm="sensors.qcom" name="diag" dev="tmpfs" ino=73 scontext=u:r:sensors:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-30 00:14:03.439   837   837 I auditd  : type=1400 audit(0.0:10): avc: denied { read } for comm="ueventd" name="mmcblk0p37" dev="tmpfs" ino=5548 scontext=u:r:ueventd:s0 tcontext=u:object_r:mba_debug_dev:s0 tclass=blk_file permissive=0
+07-30 00:14:03.959   690   690 I auditd  : type=1400 audit(0.0:11): avc: denied { read write } for comm="audio@2.0-servi" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_audio_default:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-30 00:14:12.059  1186  1186 I auditd  : type=1400 audit(0.0:12): avc: denied { read write } for comm="imsqmidaemon" name="diag" dev="tmpfs" ino=73 scontext=u:r:ims:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+07-30 00:14:12.079  1202  1202 I auditd  : type=1400 audit(0.0:13): avc: denied { read } for comm="storaged" path="/sys/kernel/debug/mmc0/mmc0:0001/ext_csd" dev="debugfs" ino=46 scontext=u:r:storaged:s0 tcontext=u:object_r:debugfs_mmc:s0 tclass=file permissive=0
+12-31 14:10:42.613  1184  1184 I auditd  : type=1400 audit(0.0:14): avc: denied { read } for comm="thermal-engine" name="uio" dev="sysfs" ino=33613 scontext=u:r:thermal-engine:s0 tcontext=u:object_r:sysfs_uio:s0 tclass=dir permissive=0
+12-31 14:10:42.643  1218  1218 I auditd  : type=1400 audit(0.0:15): avc: denied { read write } for comm="dpmd" name="diag" dev="tmpfs" ino=73 scontext=u:r:dpmd:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:42.653  1181  1181 I auditd  : type=1400 audit(0.0:16): avc: denied { read write } for comm="cnd" name="diag" dev="tmpfs" ino=73 scontext=u:r:cnd:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:42.873  1353  1353 I auditd  : type=1400 audit(0.0:17): avc: denied { read write } for comm="imsdatadaemon" name="diag" dev="tmpfs" ino=73 scontext=u:r:ims:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:42.903  1387  1387 I auditd  : type=1400 audit(0.0:18): avc: denied { read write } for comm="ipacm-diag" name="diag" dev="tmpfs" ino=73 scontext=u:r:ipacm-diag:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:42.913  1393  1393 I auditd  : type=1400 audit(0.0:19): avc: denied { create } for comm="init" name="ims_rtpd" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=0
+12-31 14:10:42.963  1190  1190 I boot_progress_start: 14128
+12-31 14:10:43.083  1418  1418 I auditd  : type=1400 audit(0.0:20): avc: denied { read write } for comm="qti" name="diag" dev="tmpfs" ino=73 scontext=u:r:qti:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:43.173  1206  1206 I auditd  : type=1400 audit(0.0:21): avc: denied { read write } for comm="rild" name="diag" dev="tmpfs" ino=73 scontext=u:r:rild:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:43.183  1426  1426 I auditd  : type=1400 audit(0.0:22): avc: denied { read write } for comm="netmgrd" name="diag" dev="tmpfs" ino=73 scontext=u:r:netmgrd:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:43.283  1411  1411 I auditd  : type=1400 audit(0.0:23): avc: denied { read write } for comm="rild" name="diag" dev="tmpfs" ino=73 scontext=u:r:rild:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:43.343  1393  1393 I auditd  : type=1400 audit(0.0:24): avc: denied { read write } for comm="ims_rtp_daemon" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_imsrtp:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:43.843  1206  1206 I auditd  : type=1400 audit(0.0:25): avc: denied { ioctl } for comm="rild" path="/vendor/radio/qcril_database/qcril.db" dev="mmcblk0p16" ino=3316 ioctlcmd=f50c scontext=u:r:rild:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=0
+12-31 14:10:44.103  1192  1192 I auditd  : type=1400 audit(0.0:26): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.103  1192  1192 I auditd  : type=1400 audit(0.0:27): avc: denied { call } for comm="AudioOut_D" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.103  1192  1192 I auditd  : type=1400 audit(0.0:28): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.113  1192  1192 I auditd  : type=1400 audit(0.0:29): avc: denied { call } for comm="AudioOut_15" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.113  1192  1192 I auditd  : type=1400 audit(0.0:30): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.113  1192  1192 I auditd  : type=1400 audit(0.0:31): avc: denied { call } for comm="AudioOut_1D" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.113  1200  1200 I auditd  : type=1400 audit(0.0:32): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:drmserver:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:44.113  1200  1200 I auditd  : type=1400 audit(0.0:33): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:mediaextractor:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:44.123  1200  1200 I auditd  : type=1400 audit(0.0:34): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:drmserver:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:44.123  1192  1192 I auditd  : type=1400 audit(0.0:35): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.123  1192  1192 I auditd  : type=1400 audit(0.0:36): avc: denied { call } for comm="AudioOut_25" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.123  1192  1192 I auditd  : type=1400 audit(0.0:37): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.123  1192  1192 I auditd  : type=1400 audit(0.0:38): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.133  1192  1192 I auditd  : type=1400 audit(0.0:39): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.133  1192  1192 I chatty  : uid=1041(audioserver) /system/bin/audioserver identical 2 lines
+12-31 14:10:44.133  1192  1192 I auditd  : type=1400 audit(0.0:42): avc: denied { call } for comm="audioserver" scontext=u:r:audioserver:s0 tcontext=u:r:bootanim:s0 tclass=binder permissive=0
+12-31 14:10:44.135  1190  1190 I sysui_histogram: [boot_zygote_init,15300]
+12-31 14:10:44.146  1190  1190 I sysui_multi_action: [757,804,799,boot_zygote_init,801,15300,802,1]
+12-31 14:10:44.153  1190  1190 I boot_progress_preload_start: 15318
+12-31 14:10:44.343  1191  1191 I sysui_histogram: [boot_zygote_init,15508]
+12-31 14:10:44.353  1191  1191 I sysui_multi_action: [757,804,799,boot_zygote_init,801,15508,802,1]
+12-31 14:10:45.105  1190  1190 I boot_progress_preload_end: 16269
+12-31 14:10:45.369  2005  2005 I boot_progress_system_run: 16534
+12-31 14:10:45.370  2005  2005 I sysui_histogram: [boot_system_server_init,16534]
+12-31 14:10:45.370  2005  2005 I sysui_multi_action: [757,804,799,boot_system_server_init,801,16534,802,1]
+12-31 14:10:46.038  2005  2054 I am_uid_running: 10096
+12-31 14:10:46.047  2005  2054 I am_proc_start: [0,2650,10096,com.zui.deskclock,broadcast,com.zui.deskclock/.AlarmInitReceiver]
+12-31 14:10:46.052  2434  2434 I cdma_service_state_change: [1,1,0,1]
+12-31 14:10:46.054  2005  2336 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast android.telephony.action.VOICE_RIL_REGSTATE_CHANGED from system 2434:com.android.phone/1001 pkg com.android.phone]
+12-31 14:10:46.058  2005  2336 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast android.telephony.action.VOICE_RIL_REGSTATE_CHANGED from system 2434:com.android.phone/1001 pkg com.android.phone]
+12-31 14:10:46.061  2005  2005 I rescue_note: [0,1,17220]
+12-31 14:10:46.063  2005  2029 I am_proc_bound: [0,2650,com.zui.deskclock]
+12-31 14:10:46.072  2005  2005 I sysui_histogram: [boot_package_manager_init_start,17236]
+12-31 14:10:46.072  2005  2005 I sysui_multi_action: [757,804,799,boot_package_manager_init_start,801,17236,802,1]
+12-31 14:10:46.073  2005  2005 I boot_progress_pms_start: 17238
+12-31 14:10:46.189  2005  2029 I configuration_changed: 2
+12-31 14:10:46.228  2005  2448 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.motorola.internal.intent.action.USER_LOCKED from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:46.323  2005  2028 I am_uid_running: 10037
+12-31 14:10:46.333  2005  2005 I boot_progress_pms_system_scan_start: 17498
+12-31 14:10:46.334  2005  2028 I am_proc_start: [0,2674,10037,com.lenovo.process.weathercenter,service,com.lenovo.weathercenter/.LocationDataService]
+12-31 14:10:46.356  2005  2336 I am_proc_bound: [0,2674,com.lenovo.process.weathercenter]
+12-31 14:10:46.556  2005  2005 I boot_progress_pms_data_scan_start: 17721
+12-31 14:10:46.596  2005  2336 I am_uid_running: 10061
+12-31 14:10:46.610  2005  2336 I am_proc_start: [0,2692,10061,com.zui.zhealthy,broadcast,com.zui.zhealthy/.receiver.ZhealthyInitReceiver]
+12-31 14:10:46.627  2005  2336 I am_proc_bound: [0,2692,com.zui.zhealthy]
+12-31 14:10:47.010  2005  2690 I am_uid_active: 10061
+12-31 14:10:47.069  2005  2054 I am_uid_running: 10043
+12-31 14:10:47.071  2005  2005 I notification_enqueue: [1000,2005,android,40,NULL,0,Notification(channel=FOREGROUND_SERVICE pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0xff607d8b vis=PRIVATE),0]
+12-31 14:10:47.071  2005  2005 I notification_enqueue: [10061,2692,com.zui.zhealthy,1001,NULL,0,Notification(channel=health_sports_service_id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0xff607d8b vis=PRIVATE),0]
+12-31 14:10:47.083  2005  2054 I am_proc_start: [0,2719,10043,com.android.dialer,broadcast,com.android.dialer/.app.voicemail.LegacyVoicemailNotificationReceiver]
+12-31 14:10:47.091  2005  2447 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast PNW.dismiss_warning_dialog from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:47.098  2005  2029 I am_proc_bound: [0,2719,com.android.dialer]
+12-31 14:10:47.102  1202  1370 I storaged_emmc_info: [emmc 5.1,1,1,1]
+12-31 14:10:47.130  2005  2054 I am_uid_running: 10008
+12-31 14:10:47.136  2005  2005 I boot_progress_pms_scan_end: 18301
+12-31 14:10:47.141  2005  2054 I am_proc_start: [0,2735,10008,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
+12-31 14:10:47.148  2005  2005 I pm_critical_info: Destroying /data/user/0/media due to: com.android.server.pm.PackageManagerException: Package media is unknown
+12-31 14:10:47.159  2264  2264 I sysui_view_visibility: [111,100]
+12-31 14:10:47.159  2264  2264 I sysui_multi_action: [757,111,758,1]
+12-31 14:10:47.159  2264  2264 I sysui_multi_action: [757,268,758,1,759,268,806,com.google.android.gms,871,com.google.android.gms.nearby.discovery.ui.DiscoveryTileService,927,25]
+12-31 14:10:47.161  2005  2330 I am_proc_bound: [0,2735,com.android.cellbroadcastreceiver]
+12-31 14:10:47.212  2005  2005 I sysui_histogram: [fingerprint_token,0]
+12-31 14:10:47.212  2005  2005 I sysui_multi_action: [757,804,799,fingerprint_token,801,0,802,1]
+12-31 14:10:47.337  2264  2264 I sysui_multi_action: [757,196,758,1,759,1]
+12-31 14:10:47.433  2005  2005 I boot_progress_pms_ready: 18598
+12-31 14:10:47.539  2264  2264 I sysui_histogram: [note_load,0]
+12-31 14:10:47.539  2264  2264 I sysui_multi_action: [757,804,799,note_load,801,0,802,1]
+12-31 14:10:47.539  2005  2336 I sysui_view_visibility: [127,100]
+12-31 14:10:47.539  2005  2336 I sysui_multi_action: [757,127,758,1]
+12-31 14:10:47.539  2005  2336 I sysui_histogram: [note_load,0]
+12-31 14:10:47.539  2005  2336 I sysui_multi_action: [757,804,799,note_load,801,0,802,1]
+12-31 14:10:47.539  2005  2336 I notification_panel_revealed: 0
+12-31 14:10:47.572  2005  2005 I sysui_histogram: [boot_package_manager_init_ready,18737]
+12-31 14:10:47.572  2005  2005 I sysui_multi_action: [757,804,799,boot_package_manager_init_ready,801,18737,802,1]
+12-31 14:10:47.576  2005  2005 I am_uid_running: 1000
+12-31 14:10:47.579  2005  2005 I am_uid_active: 1000
+12-31 14:10:47.593  2005  2029 I battery_status: [2,2,1,1,Li-ion]
+12-31 14:10:47.593  2005  2029 I battery_level: [48,3627,130]
+12-31 14:10:47.599  2264  2264 I sysui_action: [496,true]
+12-31 14:10:47.599  2264  2264 I sysui_multi_action: [757,496,758,4,759,1]
+12-31 14:10:47.602  2434  2434 I cdma_service_state_change: [0,1,0,0]
+12-31 14:10:47.698  2005  2054 I am_wtf  : [0,2005,system_server,-1,AlarmManager,SysUI package not found!]
+12-31 14:10:47.762  2005  2005 I wm_stack_created: 0
+12-31 14:10:47.782  2005  2005 I configuration_changed: 24056
+12-31 14:10:47.799  2005  2005 I configuration_changed: 1032
+12-31 14:10:47.820  2005  2194 I configuration_changed: 512
+12-31 14:10:47.838  2005  2208 I configuration_changed: 256
+12-31 14:10:47.847  2005  2093 I configuration_changed: 256
+12-31 14:10:47.983   727   953 I sf_stop_bootanim: 24329
+12-31 14:10:47.984  2005  2093 I wm_boot_animation_done: 24330
+12-31 14:10:48.000  2005  2093 I am_user_state_changed: [0,1]
+12-31 14:10:48.000  2005  2093 I sysui_histogram: [framework_locked_boot_completed,24]
+12-31 14:10:48.000  2005  2093 I sysui_multi_action: [757,804,799,framework_locked_boot_completed,801,24,802,1]
+12-31 14:10:48.002  2005  2093 I am_user_state_changed: [0,2]
+12-31 14:10:48.033  1394  1394 I auditd  : type=1400 audit(0.0:46): avc: denied { read write } for comm="imsrcsd" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_rcsservice:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:48.041  2840  2840 I sysui_multi_action: [757,1098,758,4,1099,hard_rst]
+12-31 14:10:48.060  2842  2842 I sysui_multi_action: [757,804,799,factory_reset_current_time,801,1546236648,802,1]
+12-31 14:10:48.061  2842  2842 I sysui_multi_action: [757,804,799,factory_reset_record_value,801,1230739204,802,1]
+12-31 14:10:48.076  2845  2845 I sysui_multi_action: [757,804,799,ro.boottime.init.cold_boot_wait,801,1442,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,factory_reset_boot_complete_post_decrypt,801,11,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,time_since_factory_reset,801,315497444,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,time_since_last_boot,801,545,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,boot_complete_post_decrypt,801,11,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,ro.boottime.init,801,1163,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,boottime.bootloader.total,801,0,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,ota_boot_complete,801,94,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,factory_reset_current_time,801,1546236648,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,build_date,801,1533756867,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,post_decrypt_time_elapsed,801,13,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,factory_reset,801,1230739204,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,boot_decryption_complete,801,24,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,boot_complete,801,24,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,ota_boot_complete_post_decrypt,801,65,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,factory_reset_boot_complete,801,17,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,boot_reason,801,1,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,last_boot_time_utc,801,1546236648,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,factory_reset_record_value,801,1230739204,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,absolute_boot_time,801,24,802,1]
+12-31 14:10:48.077  2845  2845 I sysui_multi_action: [757,804,799,ro.boottime.init.selinux,801,51,802,1]
+12-31 14:10:48.164  2005  2234 I storage_state: [41217664-9172-527a-b3d5-edabb50a7d69,0,0,17596796928,49990459392]
+12-31 14:10:48.186  2005  2005 I stream_devices_changed: [0,0,1]
+12-31 14:10:48.186  2005  2005 I stream_devices_changed: [2,0,2]
+12-31 14:10:48.186  2005  2005 I stream_devices_changed: [3,0,2]
+12-31 14:10:48.186  2005  2005 I stream_devices_changed: [4,0,2]
+12-31 14:10:48.187  2005  2005 I stream_devices_changed: [6,0,1]
+12-31 14:10:48.203   705   705 I auditd  : type=1400 audit(0.0:47): avc: denied { dac_override } for comm="usb@1.0-service" capability=1 scontext=u:r:hal_usb_default:s0 tcontext=u:r:hal_usb_default:s0 tclass=capability permissive=0
+12-31 14:10:48.203   705   705 I auditd  : type=1400 audit(0.0:48): avc: denied { dac_override } for comm="usb@1.0-service" capability=1 scontext=u:r:hal_usb_default:s0 tcontext=u:r:hal_usb_default:s0 tclass=capability permissive=0
+12-31 14:10:48.373  2005  2005 I boot_progress_ams_ready: 19537
+12-31 14:10:48.374  2005  2005 I configuration_changed: 260
+12-31 14:10:48.420  2005  2093 I configuration_changed: 256
+12-31 14:10:48.508  2005  2225 I netstats_mobile_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:48.508  2005  2225 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:48.530  2005  2225 I netstats_mobile_sample: [0,0,84,1,0,0,76,1,0,0,0,0,-1]
+12-31 14:10:48.530  2005  2225 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:48.574  2005  2005 I notification_enqueue: [1000,2005,android,32,NULL,-1,Notification(channel=USB pri=0 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x2 color=0xff607d8b vis=PUBLIC),0]
+12-31 14:10:48.574  2005  2005 I notification_enqueue: [1000,2005,android,26,NULL,-1,Notification(channel=DEVELOPER pri=0 contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x2 color=0xff607d8b vis=PUBLIC),0]
+12-31 14:10:48.638  2005  2054 I am_uid_running: 10017
+12-31 14:10:48.647  2005  2225 I netstats_mobile_sample: [500,2,218,3,500,2,194,3,119,1,194,3,-1]
+12-31 14:10:48.647  2005  2225 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:48.652  2005  2054 I am_proc_start: [0,2893,10017,com.google.android.gms.persistent,service,com.google.android.gms/.backup.BackupTransportService]
+12-31 14:10:48.668  2005  2005 I backup_transport_lifecycle: [android/com.android.internal.backup.LocalTransportService,1]
+12-31 14:10:48.675  2005  2690 I battery_level: [47,3582,130]
+12-31 14:10:48.689  2005  2690 I am_proc_bound: [0,2893,com.google.android.gms.persistent]
+12-31 14:10:48.699  2005  2690 I am_uid_active: 10017
+12-31 14:10:48.714  2005  2054 I am_uid_running: 10055
+12-31 14:10:48.741  2005  2054 I am_proc_start: [0,2918,10055,com.zui.sdac,added application,com.zui.sdac]
+12-31 14:10:48.784  2005  2054 I am_proc_start: [0,2934,1000,com.zui.safecenter,added application,com.zui.safecenter]
+12-31 14:10:48.785  2005  2054 I am_uid_running: 10095
+12-31 14:10:48.807  2005  2054 I am_proc_start: [0,2948,10095,com.redteamobile.virtual.softsim,added application,com.redteamobile.virtual.softsim]
+12-31 14:10:48.823  2005  2054 I am_proc_start: [0,2960,1000,com.zui.urlsafe,added application,com.zui.urlsafe]
+12-31 14:10:48.824  2005  2054 I am_uid_running: 10062
+12-31 14:10:48.839  2005  2054 I am_proc_start: [0,2974,10062,com.zui.userexperience,added application,com.zui.userexperience]
+12-31 14:10:48.846  2005  2005 I am_uid_running: 10084
+12-31 14:10:48.853  2005  2054 I am_proc_start: [0,2987,1001,com.qualcomm.qti.loadcarrier,added application,com.qualcomm.qti.loadcarrier]
+12-31 14:10:48.854  2005  2054 I am_uid_running: 10074
+12-31 14:10:48.860  2005  2005 I am_proc_start: [0,2249,10084,com.android.inputmethod.latin,service,com.android.inputmethod.latin/.LatinIME]
+12-31 14:10:48.867  2005  2005 I am_uid_running: 10058
+12-31 14:10:48.871  2005  2054 I am_proc_start: [0,3000,10074,com.zui.dataperf,added application,com.zui.dataperf]
+12-31 14:10:48.878  2005  2005 I am_proc_start: [0,2264,10058,com.android.systemui,service,com.android.systemui/.ImageWallpaper]
+12-31 14:10:48.879  2005  2029 I am_proc_bound: [0,2249,com.android.inputmethod.latin]
+12-31 14:10:48.883  2005  2005 I auditd  : type=1400 audit(0.0:49): avc: denied { search } for comm="system_server" name="emulated" dev="tmpfs" ino=32148 scontext=u:r:system_server:s0 tcontext=u:object_r:storage_stub_file:s0 tclass=dir permissive=0
+12-31 14:10:48.883   705   705 I auditd  : type=1400 audit(0.0:50): avc: denied { dac_override } for comm="usb@1.0-service" capability=1 scontext=u:r:hal_usb_default:s0 tcontext=u:r:hal_usb_default:s0 tclass=capability permissive=0
+12-31 14:10:48.883   705   705 I auditd  : type=1400 audit(0.0:51): avc: denied { dac_override } for comm="usb@1.0-service" capability=1 scontext=u:r:hal_usb_default:s0 tcontext=u:r:hal_usb_default:s0 tclass=capability permissive=0
+12-31 14:10:48.884  2005  2029 I am_uid_active: 10084
+12-31 14:10:48.886  2005  2054 I am_proc_start: [0,3012,1000,com.quicinc.wbcserviceapp,added application,com.quicinc.wbcserviceapp]
+12-31 14:10:48.893  2005  2005 I auditd  : type=1400 audit(0.0:52): avc: denied { write } for comm="Binder:2005_2" name="timerslack_ns" dev="proc" ino=24552 scontext=u:r:system_server:s0 tcontext=u:r:audioserver:s0 tclass=file permissive=0
+12-31 14:10:48.893  2005  2005 I auditd  : type=1400 audit(0.0:53): avc: denied { write } for comm="Binder:2005_2" name="timerslack_ns" dev="proc" ino=24556 scontext=u:r:system_server:s0 tcontext=u:r:audioserver:s0 tclass=file permissive=0
+12-31 14:10:48.893  2005  2005 I auditd  : type=1400 audit(0.0:54): avc: denied { write } for comm="Binder:2005_2" name="timerslack_ns" dev="proc" ino=23259 scontext=u:r:system_server:s0 tcontext=u:r:audioserver:s0 tclass=file permissive=0
+12-31 14:10:48.902  2005  2029 I am_proc_bound: [0,2264,com.android.systemui]
+12-31 14:10:48.902  2005  2054 I am_proc_start: [0,3026,1001,com.lenovo.regservice,added application,com.lenovo.regservice]
+12-31 14:10:48.905  2005  2029 I am_uid_active: 10058
+12-31 14:10:48.917  2005  2054 I am_proc_start: [0,3040,1000,com.qualcomm.qti.services.secureui:sui_service,added application,com.qualcomm.qti.services.secureui:sui_service]
+12-31 14:10:48.918  2005  2054 I am_uid_running: 10111
+12-31 14:10:48.934  2005  2054 I am_proc_start: [0,3053,10111,com.zui.wifisafe,added application,com.zui.wifisafe]
+12-31 14:10:48.943  2005  2193 I am_uid_running: 1037
+12-31 14:10:48.953  2005  2054 I am_proc_start: [0,3067,1000,com.zui.net.data.monitor,added application,com.zui.net.data.monitor]
+12-31 14:10:48.959  2005  2054 I am_user_state_changed: [0,3]
+12-31 14:10:48.960  2005  2054 I sysui_histogram: [framework_boot_completed,25]
+12-31 14:10:48.960  2005  2054 I sysui_multi_action: [757,804,799,framework_boot_completed,801,25,802,1]
+12-31 14:10:48.974  2005  2054 I am_uid_running: 10039
+12-31 14:10:48.980  2005  2193 I am_proc_start: [0,2294,1037,WebViewLoader-armeabi-v7a,,]
+12-31 14:10:48.991  2005  2193 I am_proc_start: [0,2303,1037,WebViewLoader-arm64-v8a,,]
+12-31 14:10:48.991  2005  2054 I am_proc_start: [0,3090,10039,com.zui.bugtogo,broadcast,com.zui.bugtogo/com.zui.ue.UEUsbReceiver]
+12-31 14:10:48.992  2005  2336 I am_proc_bound: [0,2948,com.redteamobile.virtual.softsim]
+12-31 14:10:48.996  2005  2336 I am_uid_active: 10095
+12-31 14:10:48.996  2005  2028 I am_proc_bound: [0,2960,com.zui.urlsafe]
+12-31 14:10:49.001  2005  2452 I am_proc_bound: [0,2974,com.zui.userexperience]
+12-31 14:10:49.004  2005  2452 I am_uid_active: 10062
+12-31 14:10:49.005  2005  2447 I am_proc_bound: [0,2987,com.qualcomm.qti.loadcarrier]
+12-31 14:10:49.008  2005  2324 I am_proc_bound: [0,3000,com.zui.dataperf]
+12-31 14:10:49.011  2005  2324 I am_uid_active: 10074
+12-31 14:10:49.012  2005  2380 I am_proc_bound: [0,3012,com.quicinc.wbcserviceapp]
+12-31 14:10:49.014  2005  3031 I am_proc_bound: [0,3026,com.lenovo.regservice]
+12-31 14:10:49.016  2005  2448 I am_proc_bound: [0,3040,com.qualcomm.qti.services.secureui:sui_service]
+12-31 14:10:49.018  2005  3057 I am_proc_bound: [0,3053,com.zui.wifisafe]
+12-31 14:10:49.021  2005  3057 I am_uid_active: 10111
+12-31 14:10:49.022  2005  2029 I am_proc_bound: [0,2918,com.zui.sdac]
+12-31 14:10:49.024  2005  2029 I am_uid_active: 10055
+12-31 14:10:49.025  2005  2330 I am_proc_bound: [0,2934,com.zui.safecenter]
+12-31 14:10:49.028  2005  3055 I am_finish_activity: [0,189874755,1,com.android.settings/.FallbackHome,app-request]
+12-31 14:10:49.028  2005  3055 I wm_task_moved: [1,1,0]
+12-31 14:10:49.028  2005  3055 I am_destroy_activity: [0,189874755,1,com.android.settings/.FallbackHome,finish-imm]
+12-31 14:10:49.034  2005  3076 I am_uid_running: 10092
+12-31 14:10:49.061  2005  3076 I am_proc_start: [0,3109,10092,com.android.smspush,service,com.android.smspush/.WapPushManager]
+12-31 14:10:49.064  2005  3097 I am_proc_bound: [0,3067,com.zui.net.data.monitor]
+12-31 14:10:49.069  2005  2005 I am_uid_running: 10218
+12-31 14:10:49.082  2005  2005 I am_proc_start: [0,3115,10218,com.jd.jrapp:ldlkldeviceservice,service,com.jd.jrapp/com.landicorp.android.landibandb3sdk.services.LDNotificationCenterMonitorService]
+12-31 14:10:49.086  2005  2029 I am_proc_bound: [0,3090,com.zui.bugtogo]
+12-31 14:10:49.098  2005  2330 I wm_task_removed: [1,removeAppToken: last token]
+12-31 14:10:49.098  2005  2330 I wm_task_removed: [1,removeTask]
+12-31 14:10:49.169  2005  2330 I wm_task_created: [2,0]
+12-31 14:10:49.170  2005  2330 I wm_task_moved: [2,1,0]
+12-31 14:10:49.170  2005  2330 I wm_task_moved: [2,1,0]
+12-31 14:10:49.170  2005  2330 I am_create_task: [0,2]
+12-31 14:10:49.171  2005  2330 I am_create_activity: [0,265469720,2,com.zui.launcher/.Launcher,android.intent.action.MAIN,NULL,NULL,268435712]
+12-31 14:10:49.171  2005  2330 I wm_task_moved: [2,1,0]
+12-31 14:10:49.178  2005  2029 I am_proc_bound: [0,3109,com.android.smspush]
+12-31 14:10:49.181  2005  2029 I am_uid_active: 10092
+12-31 14:10:49.184  2005  3097 I am_proc_bound: [0,3115,com.jd.jrapp:ldlkldeviceservice]
+12-31 14:10:49.188  2005  3097 I am_uid_active: 10218
+12-31 14:10:49.189  2005  2054 I sysui_count: [window_time_0,4]
+12-31 14:10:49.189  2005  2054 I sysui_multi_action: [757,803,799,window_time_0,802,4]
+12-31 14:10:49.205  2005  2054 I am_uid_running: 10049
+12-31 14:10:49.221  2005  2054 I am_proc_start: [0,3155,10049,com.zui.launcher,activity,com.zui.launcher/.Launcher]
+12-31 14:10:49.239  2005  3088 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast PNW.dismiss_warning_dialog from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:49.248   561   561 I auditd  : avc:  denied  { add } for service=wbc_service pid=3012 uid=1000 scontext=u:r:system_app:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=0
+12-31 14:10:49.258  2005  2336 I am_proc_start: [0,3182,10017,com.google.process.gservices,content provider,com.google.android.gsf/.gservices.GservicesProvider]
+12-31 14:10:49.259  2005  3087 I am_proc_bound: [0,3155,com.zui.launcher]
+12-31 14:10:49.264  2005  3087 I am_uid_active: 10049
+12-31 14:10:49.265  2005  3087 I am_restart_activity: [0,265469720,2,com.zui.launcher/.Launcher]
+12-31 14:10:49.266  2005  3087 I am_set_resumed_activity: [0,com.zui.launcher/.Launcher,minimalResumeActivityLocked]
+12-31 14:10:49.269  2005  3087 I am_pause_activity: [0,265469720,com.zui.launcher/.Launcher]
+12-31 14:10:49.273  2005  2052 I am_uid_running: 10086
+12-31 14:10:49.286  2005  2052 I am_proc_start: [0,3197,10086,com.android.printspooler,service,com.android.printspooler/.model.PrintSpoolerService]
+12-31 14:10:49.293  2005  3096 I am_uid_running: 10064
+12-31 14:10:49.309  2005  3096 I am_proc_start: [0,3213,10064,com.zui.xlog,service,com.zui.xlog/.DeamonService]
+12-31 14:10:49.310  2005  2029 I am_proc_bound: [0,3182,com.google.process.gservices]
+12-31 14:10:49.319  2005  3055 I am_proc_bound: [0,3197,com.android.printspooler]
+12-31 14:10:49.321  2005  3055 I am_uid_active: 10086
+12-31 14:10:49.352  2005  3088 I am_proc_bound: [0,3213,com.zui.xlog]
+12-31 14:10:49.354  2005  3088 I am_uid_active: 10064
+12-31 14:10:49.365  2005  3089 I am_uid_running: 10013
+12-31 14:10:49.379  2005  3089 I am_proc_start: [0,3257,10013,android.process.media,broadcast,com.android.providers.media/.MtpReceiver]
+12-31 14:10:49.413  2005  3087 I am_proc_bound: [0,3257,android.process.media]
+12-31 14:10:49.437  2264  2371 I sysui_action: [213,2]
+12-31 14:10:49.438  2264  2371 I sysui_multi_action: [757,213,758,4,759,2]
+12-31 14:10:49.497  2005  2005 I am_proc_start: [0,2387,1000,.dataservices,added application,.dataservices]
+12-31 14:10:49.497  2005  2005 I am_uid_running: 1001
+12-31 14:10:49.503   711   711 I auditd  : type=1400 audit(0.0:55): avc: denied { read write } for comm="Loc_hal" name="diag" dev="tmpfs" ino=73 scontext=u:r:hal_gnss_qti:s0 tcontext=u:object_r:diag_device:s0 tclass=chr_file permissive=0
+12-31 14:10:49.514  2005  2005 I am_proc_start: [0,2402,1001,com.qualcomm.qti.telephonyservice,added application,com.qualcomm.qti.telephonyservice]
+12-31 14:10:49.530  2005  2005 I am_proc_start: [0,2418,1000,org.ifaa.android.service,added application,org.ifaa.android.service]
+12-31 14:10:49.547  2005  2005 I am_proc_start: [0,2434,1001,com.android.phone,added application,com.android.phone]
+12-31 14:10:49.554  2005  2052 I am_proc_start: [0,3329,1000,com.android.keychain,service,com.android.keychain/.KeyChainService]
+12-31 14:10:49.578  2005  2330 I am_proc_bound: [0,3329,com.android.keychain]
+12-31 14:10:49.615  2005  2005 I wm_task_created: [1,0]
+12-31 14:10:49.616  2005  2005 I wm_task_moved: [1,1,0]
+12-31 14:10:49.616  2005  2005 I wm_task_moved: [1,1,0]
+12-31 14:10:49.616  2005  2005 I am_create_task: [0,1]
+12-31 14:10:49.616  2005  2005 I am_create_activity: [0,189874755,1,com.android.settings/.FallbackHome,android.intent.action.MAIN,NULL,NULL,276824320]
+12-31 14:10:49.616  2005  2005 I wm_task_moved: [1,1,0]
+12-31 14:10:49.630  2005  2005 I am_proc_start: [0,2453,1000,com.android.settings,activity,com.android.settings/.FallbackHome]
+12-31 14:10:49.633  3115  3115 I auditd  : type=1400 audit(0.0:61): avc: denied { read } for comm="kldeviceservice" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:49.652  2005  2380 I am_proc_bound: [0,2387,.dataservices]
+12-31 14:10:49.653  2005  2005 I sysui_histogram: [boot_system_server_ready,20818]
+12-31 14:10:49.653  2005  2005 I sysui_multi_action: [757,804,799,boot_system_server_ready,801,20818,802,1]
+12-31 14:10:49.655  2005  2028 I am_proc_bound: [0,2402,com.qualcomm.qti.telephonyservice]
+12-31 14:10:49.656  2005  2052 I am_uid_running: 10091
+12-31 14:10:49.657  2005  2028 I am_uid_active: 1001
+12-31 14:10:49.657  2005  2330 I am_proc_bound: [0,2418,org.ifaa.android.service]
+12-31 14:10:49.658  2005  2029 I am_proc_bound: [0,2434,com.android.phone]
+12-31 14:10:49.671  2005  2052 I am_proc_start: [0,3380,10091,com.tencent.android.location,service,com.tencent.android.location/com.tencent.geolocation.nlp.service.TencentLocationService]
+12-31 14:10:49.673  2005  2005 I auditd  : type=1400 audit(0.0:62): avc: denied { execute } for comm="system_server" path="/data/dalvik-cache/arm64/system@priv-app@com.qualcomm.location@com.qualcomm.location.apk@classes.dex" dev="dm-1" ino=1052381 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:10:49.673  2005  2005 I auditd  : type=1400 audit(0.0:63): avc: denied { execute } for comm="system_server" path="/data/dalvik-cache/arm64/system@priv-app@com.qualcomm.location@com.qualcomm.location.apk@classes.dex" dev="dm-1" ino=1052381 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:10:49.674  2005  2324 I am_proc_bound: [0,2453,com.android.settings]
+12-31 14:10:49.679  2005  2324 I am_restart_activity: [0,189874755,1,com.android.settings/.FallbackHome]
+12-31 14:10:49.680  2005  2324 I am_set_resumed_activity: [0,com.android.settings/.FallbackHome,minimalResumeActivityLocked]
+12-31 14:10:49.683  2005  2005 I auditd  : type=1400 audit(0.0:64): avc: denied { write } for comm="system_server" name="system@priv-app@com.qualcomm.location@com.qualcomm.location.apk@classes.vdex" dev="dm-1" ino=1052383 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:10:49.708  2005  3087 I am_proc_bound: [0,3380,com.tencent.android.location]
+12-31 14:10:49.772  2005  2054 I am_stop_activity: [0,265469720,com.zui.launcher/.Launcher]
+12-31 14:10:49.773  2005  2054 I sysui_count: [window_time_0,1]
+12-31 14:10:49.773  2005  2054 I sysui_multi_action: [757,803,799,window_time_0,802,1]
+12-31 14:10:49.875  2005  2005 I am_uid_running: 10103
+12-31 14:10:49.891  2005  2005 I am_proc_start: [0,3438,10103,com.google.android.marvin.talkback,broadcast,com.google.android.marvin.talkback/com.google.android.accessibility.talkback.BootReceiver]
+12-31 14:10:49.900  2453  2453 I am_on_resume_called: [0,com.android.settings.FallbackHome,LAUNCH_ACTIVITY]
+12-31 14:10:49.923  1200  1200 I auditd  : type=1400 audit(0.0:56): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:drmserver:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:49.923  1200  1200 I auditd  : type=1400 audit(0.0:57): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:mediaextractor:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:49.923  1200  1200 I auditd  : type=1400 audit(0.0:58): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:drmserver:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:49.923  2005  2005 I liblog  : 61
+12-31 14:10:49.923  2005  2005 I liblog  : 11
+12-31 14:10:49.943  1200  1200 I auditd  : type=1400 audit(0.0:59): avc: denied { use } for comm="generic" path="/system/media/bootanimation.zip" dev="dm-0" ino=2938 scontext=u:r:drmserver:s0 tcontext=u:r:bootanim:s0 tclass=fd permissive=0
+12-31 14:10:49.953  2005  3096 I am_proc_bound: [0,3438,com.google.android.marvin.talkback]
+12-31 14:10:49.960  2005  2028 I am_pause_activity: [0,189874755,com.android.settings/.FallbackHome]
+12-31 14:10:49.985  2453  2453 I am_on_paused_called: [0,com.android.settings.FallbackHome,handlePauseActivity]
+12-31 14:10:49.988  2005  2054 I am_stop_activity: [0,189874755,com.android.settings/.FallbackHome]
+12-31 14:10:49.989  2005  2054 I sysui_count: [window_time_0,4]
+12-31 14:10:49.989  2005  2054 I sysui_multi_action: [757,803,799,window_time_0,802,4]
+12-31 14:10:50.006  2453  2453 I am_on_stop_called: [0,com.android.settings.FallbackHome,handleStopActivity]
+12-31 14:10:50.019  2005  2336 I am_proc_start: [0,2529,1001,com.qualcomm.qcrilmsgtunnel,service,com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService]
+12-31 14:10:50.026  2005  2054 I boot_progress_enable_screen: 21191
+12-31 14:10:50.026  2005  2054 I screen_toggled: 1
+12-31 14:10:50.043  2005  2324 I am_proc_bound: [0,2529,com.qualcomm.qcrilmsgtunnel]
+12-31 14:10:50.043  3155  3155 I am_on_resume_called: [0,com.zui.launcher.Launcher,LAUNCH_ACTIVITY]
+12-31 14:10:50.080  3155  3155 I am_on_paused_called: [0,com.zui.launcher.Launcher,handlePauseActivity]
+12-31 14:10:50.081  2005  3100 I am_failed_to_pause: [0,265469720,com.zui.launcher/.Launcher,(none)]
+12-31 14:10:50.084  2005  3087 I am_uid_active: 10037
+12-31 14:10:50.099  3155  3155 I am_on_stop_called: [0,com.zui.launcher.Launcher,handleStopActivity]
+12-31 14:10:50.212  2005  3097 I am_proc_start: [0,3509,10017,com.google.android.gms,service,com.google.android.gms/.chimera.GmsIntentOperationService]
+12-31 14:10:50.223  2434  2434 I auditd  : type=1400 audit(0.0:60): avc: denied { read } for comm="m.android.phone" name="u:object_r:opengles_prop:s0" dev="tmpfs" ino=4304 scontext=u:r:radio:s0 tcontext=u:object_r:opengles_prop:s0 tclass=file permissive=0
+12-31 14:10:50.237  2005  3096 I am_proc_bound: [0,3509,com.google.android.gms]
+12-31 14:10:50.263  2005  3097 I am_proc_start: [0,3529,10218,com.jd.jrapp,service,com.jd.jrapp/com.landicorp.android.landibandb3sdk.openmobileapi.service.SmartcardService]
+12-31 14:10:50.285  2005  3055 I am_proc_bound: [0,3529,com.jd.jrapp]
+12-31 14:10:50.453  3529  3529 I auditd  : type=1400 audit(0.0:65): avc: denied { read } for comm="com.jd.jrapp" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:50.526  2005  2448 I am_uid_running: 10048
+12-31 14:10:50.539  2005  2448 I am_proc_start: [0,3575,10048,com.zui.homesettings,content provider,com.zui.homesettings/.AppBadgeProvider]
+12-31 14:10:50.552  2005  3088 I am_proc_start: [0,3582,10218,com.jd.jrapp:xg_service_v3,content provider,com.jd.jrapp/com.qihoo360.replugin.component.process.ProcessPitProviderPersist]
+12-31 14:10:50.559  2005  3055 I am_proc_bound: [0,3575,com.zui.homesettings]
+12-31 14:10:50.559  2005  2005 I backup_transport_lifecycle: [com.google.android.gms/.backup.BackupTransportService,1]
+12-31 14:10:50.566  2005  3055 I am_uid_active: 10048
+12-31 14:10:50.569  2005  2005 I backup_transport_lifecycle: [com.google.android.gms/.backup.component.D2dTransportService,1]
+12-31 14:10:50.573  2005  3087 I am_proc_bound: [0,3582,com.jd.jrapp:xg_service_v3]
+12-31 14:10:50.733  3582  3582 I auditd  : type=1400 audit(0.0:66): avc: denied { read } for comm="p:xg_service_v3" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:50.749  2005  2330 I am_proc_start: [0,3627,10058,com.android.systemui:sceneservice,service,com.android.systemui/.statusbar.redpacket.SceneNotificationService]
+12-31 14:10:50.767  2005  2448 I am_proc_start: [0,3643,10058,com.zui.utouchcore:utouch,service,com.zui.utouchcore/.UTouchService]
+12-31 14:10:50.770  2005  2336 I am_proc_bound: [0,3627,com.android.systemui:sceneservice]
+12-31 14:10:50.783  2005  3055 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast systemui.action.switch.flashlight.refreshex from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:50.784  2005  3055 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast systemui.action.switch.flashlight.refreshex from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:50.787  2005  3096 I am_proc_bound: [0,3643,com.zui.utouchcore:utouch]
+12-31 14:10:50.851  2005  3097 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast systemui.action.switch.flashlight.refreshex from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:50.853  2005  3097 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast systemui.action.switch.flashlight.refreshex from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:50.929  2005  3088 I am_proc_start: [0,3668,1000,com.zui.auservice,broadcast,com.zui.auservice/.download.DownloadReceiver]
+12-31 14:10:50.942  2005  2005 I notification_enqueue: [1000,2005,android,40,NULL,0,Notification(channel=FOREGROUND_SERVICE pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0xff607d8b vis=PRIVATE),1]
+12-31 14:10:50.952  2005  3089 I am_proc_bound: [0,3668,com.zui.auservice]
+12-31 14:10:50.953  2005  2005 I notification_enqueue: [10058,2264,com.zui.utouchcore,10002,NULL,0,Notification(channel=id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0xff607d8b vis=PRIVATE),0]
+12-31 14:10:51.048  2005  3088 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.zui.safecenter.action.normal_icon from system 2934:com.zui.safecenter/1000 pkg com.zui.safecenter]
+12-31 14:10:51.156  2005  2336 I am_uid_running: 10121
+12-31 14:10:51.170  2005  2336 I configuration_changed: 3
+12-31 14:10:51.171  2005  2336 I am_proc_start: [0,3717,10121,com.tencent.mm,broadcast,com.tencent.mm/.booter.MountReceiver]
+12-31 14:10:51.198  2005  3087 I am_proc_bound: [0,3717,com.tencent.mm]
+12-31 14:10:51.323  2005  2225 I netstats_mobile_sample: [32860,101,14915,115,32860,101,13995,115,32860,101,13995,115,-1]
+12-31 14:10:51.324  2005  2225 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:51.341  2005  2225 I netstats_mobile_sample: [32860,101,14915,115,32860,101,13995,115,32860,101,13995,115,-1]
+12-31 14:10:51.342  2005  2225 I netstats_wifi_sample: [0,0,0,0,0,0,0,0,0,0,0,0,-1]
+12-31 14:10:51.368  2005  2336 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.android.wifi.connected.state.is.invalide from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:51.369  2005  2336 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.android.wifi.connected.state.is.invalide from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:51.593  3582  3582 I auditd  : type=1400 audit(0.0:67): avc: denied { read } for comm="BuglyThread-2" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:51.593  3582  3582 I auditd  : type=1400 audit(0.0:68): avc: denied { search } for comm="BuglyThread-2" name="usb" dev="sysfs" ino=35473 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_usb_supply:s0 tclass=dir permissive=0
+12-31 14:10:51.593  3582  3582 I auditd  : type=1400 audit(0.0:69): avc: denied { search } for comm="BuglyThread-2" name="battery" dev="sysfs" ino=35570 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_battery_supply:s0 tclass=dir permissive=0
+12-31 14:10:51.593  3582  3582 I auditd  : type=1400 audit(0.0:70): avc: denied { read } for comm="BuglyThread-2" name="uptime" dev="proc" ino=4026532087 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:10:51.603  3115  3115 I auditd  : type=1400 audit(0.0:71): avc: denied { read } for comm="BuglyThread-2" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:51.603  3115  3115 I auditd  : type=1400 audit(0.0:72): avc: denied { search } for comm="BuglyThread-2" name="usb" dev="sysfs" ino=35473 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_usb_supply:s0 tclass=dir permissive=0
+12-31 14:10:51.603  3115  3115 I auditd  : type=1400 audit(0.0:73): avc: denied { search } for comm="BuglyThread-2" name="battery" dev="sysfs" ino=35570 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_battery_supply:s0 tclass=dir permissive=0
+12-31 14:10:51.603  3115  3115 I auditd  : type=1400 audit(0.0:74): avc: denied { read } for comm="BuglyThread-2" name="uptime" dev="proc" ino=4026532087 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:10:51.666  2005  2052 I am_meminfo: [1062027264,3211051008,12288,278700032,384686080]
+12-31 14:10:51.863  3529  3529 I auditd  : type=1400 audit(0.0:75): avc: denied { read } for comm="Thread-30" name="u:object_r:qemu_hw_mainkeys_prop:s0" dev="tmpfs" ino=4312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:qemu_hw_mainkeys_prop:s0 tclass=file permissive=0
+12-31 14:10:51.863  3529  3529 I auditd  : type=1400 audit(0.0:76): avc: denied { read } for comm="Thread-30" name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=4342 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=0
+12-31 14:10:51.937  2005  3088 I am_proc_start: [0,3846,10218,com.jd.jrapp:jdpush,service,com.jd.jrapp/com.jingdong.jdpush_new.JDSPushService]
+12-31 14:10:51.990  2005  2336 I am_proc_bound: [0,3846,com.jd.jrapp:jdpush]
+12-31 14:10:52.193  3846  3846 I auditd  : type=1400 audit(0.0:77): avc: denied { read } for comm="jd.jrapp:jdpush" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:53.019  2005  2336 I am_proc_start: [0,4000,10017,com.google.process.gapps,content provider,com.google.android.gsf/.settings.GoogleSettingsProvider]
+12-31 14:10:53.058  2005  3089 I am_proc_bound: [0,4000,com.google.process.gapps]
+12-31 14:10:53.753  2005  3088 I am_proc_start: [0,4094,10017,com.google.android.gms.ui,service,com.google.android.gms/.chimera.UiIntentOperationService]
+12-31 14:10:53.778  2005  3096 I am_proc_bound: [0,4094,com.google.android.gms.ui]
+12-31 14:10:54.062  2005  2216 I ntp_failure: [2.android.pool.ntp.org/2600:3c01::f03c:91ff:fec8:5c8,java.net.SocketTimeoutException: Poll timed out]
+12-31 14:10:54.094  2005  2467 I ntp_failure: [2.android.pool.ntp.org/2600:3c01::f03c:91ff:fec8:5c8,java.net.SocketTimeoutException: Poll timed out]
+12-31 14:10:54.173  3717  3717 I auditd  : type=1400 audit(0.0:78): avc: denied { read } for comm="parallels-4" name="u:object_r:qemu_hw_mainkeys_prop:s0" dev="tmpfs" ino=4312 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:qemu_hw_mainkeys_prop:s0 tclass=file permissive=0
+12-31 14:10:54.203  3529  3529 I auditd  : type=1400 audit(0.0:79): avc: denied { read } for comm="BuglyThread-2" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:54.213  3529  3529 I auditd  : type=1400 audit(0.0:80): avc: denied { search } for comm="BuglyThread-2" name="usb" dev="sysfs" ino=35473 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_usb_supply:s0 tclass=dir permissive=0
+12-31 14:10:54.213  3529  3529 I auditd  : type=1400 audit(0.0:81): avc: denied { search } for comm="BuglyThread-2" name="battery" dev="sysfs" ino=35570 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_battery_supply:s0 tclass=dir permissive=0
+12-31 14:10:54.213  3529  3529 I auditd  : type=1400 audit(0.0:82): avc: denied { read } for comm="BuglyThread-2" name="uptime" dev="proc" ino=4026532087 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:10:54.277  3509  3701 I [70220] : 47122
+12-31 14:10:54.460  2005  2216 I ntp_success: [2.android.pool.ntp.org/193.228.143.23,314,168]
+12-31 14:10:54.479  2005  3076 I am_uid_active: 10013
+12-31 14:10:54.567  3509  4169 I aggregation: 1546236654567
+12-31 14:10:54.615  3509  4169 I [70220] : [4100,113]
+12-31 14:10:54.944  2005  3057 I am_uid_running: 10003
+12-31 14:10:54.955  2005  3057 I am_proc_start: [0,4217,10003,android.process.acore,content provider,com.android.providers.contacts/.ContactsProvider2]
+12-31 14:10:54.993  2005  3088 I am_proc_bound: [0,4217,android.process.acore]
+12-31 14:10:55.010  2005  3088 I am_uid_active: 10003
+12-31 14:10:55.162  2005  2448 I am_proc_start: [0,4245,10017,com.google.android.gms.unstable,service,com.google.android.gms/.droidguard.DroidGuardService]
+12-31 14:10:55.204  2005  3076 I am_proc_bound: [0,4245,com.google.android.gms.unstable]
+12-31 14:10:55.328  2005  3057 I am_proc_start: [0,4272,10121,com.tencent.mm:exdevice,service,com.tencent.mm/.plugin.sport.service.SportService]
+12-31 14:10:55.383  2005  3076 I am_proc_bound: [0,4272,com.tencent.mm:exdevice]
+12-31 14:10:55.595  2005  3088 I am_uid_running: 10132
+12-31 14:10:55.610  2005  3088 I am_proc_start: [0,4314,10132,com.tencent.mobileqq:MSF,broadcast,com.tencent.mobileqq/.msf.core.NetConnInfoCenter]
+12-31 14:10:55.657  2005  2029 I am_proc_bound: [0,4314,com.tencent.mobileqq:MSF]
+12-31 14:10:56.161  2005  2336 I am_proc_start: [0,4369,10132,com.tencent.mobileqq,content provider,com.tencent.mobileqq/com.tencent.mqq.shared_file_accessor.ContentProviderImpl]
+12-31 14:10:56.192  2005  3100 I am_proc_bound: [0,4369,com.tencent.mobileqq]
+12-31 14:10:56.836  2005  3088 I am_uid_running: 10200
+12-31 14:10:56.848  2005  3088 I am_proc_start: [0,4465,10200,com.sohu.inputmethod.sogou,broadcast,com.sohu.inputmethod.sogou/com.sohu.inputmethod.settings.status.InputMethodChangedReceiver]
+12-31 14:10:56.874  2005  3076 I am_proc_bound: [0,4465,com.sohu.inputmethod.sogou]
+12-31 14:10:56.883  4314  4314 I auditd  : type=1400 audit(0.0:83): avc: denied { read } for comm="nt.mobileqq:MSF" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:57.367  2005  2690 I am_proc_start: [0,4530,10121,com.tencent.mm:push,service,com.tencent.mm/.booter.CoreService]
+12-31 14:10:57.393  2005  3057 I am_proc_bound: [0,4530,com.tencent.mm:push]
+12-31 14:10:57.573  4465  4465 I auditd  : type=1400 audit(0.0:84): avc: denied { read } for comm="Thread-2" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:57.642  2005  2054 I am_uid_running: 10025
+12-31 14:10:57.653  2005  2054 I am_proc_start: [0,4577,10025,com.lenovo.leos.appstore,broadcast,com.lenovo.leos.appstore/.receiver.ConnectivityChangeReceiver]
+12-31 14:10:57.669  2005  3088 I am_proc_bound: [0,4577,com.lenovo.leos.appstore]
+12-31 14:10:58.613  4314  4314 I auditd  : type=1400 audit(0.0:85): avc: denied { read } for comm="Thread-12" name="address" dev="sysfs" ino=50096 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:58.653  4314  4314 I auditd  : type=1400 audit(0.0:86): avc: denied { read } for comm="Thread-12" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:58.653  4314  4314 I auditd  : type=1400 audit(0.0:87): avc: denied { read } for comm="Thread-12" name="name" dev="sysfs" ino=37054 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:58.653  4314  4314 I auditd  : type=1400 audit(0.0:88): avc: denied { read } for comm="Thread-12" name="cid" dev="sysfs" ino=37045 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:58.733  4530  4530 I auditd  : type=1400 audit(0.0:89): avc: denied { read } for comm="tencent.mm:push" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:58.868  2005  3076 I sysui_multi_action: [757,856,758,2,806,com.tencent.mobileqq,857,CHANNEL_ID_HIDE_BADGE,858,2]
+12-31 14:10:58.870  2005  3076 I sysui_multi_action: [757,856,758,1,806,com.tencent.mobileqq,857,CHANNEL_ID_HIDE_BADGE,858,2]
+12-31 14:10:58.871  2005  2005 I notification_cancel_all: [1000,2005,com.tencent.mobileqq,0,0,0,17,NULL]
+12-31 14:10:58.883  4714  4714 I auditd  : type=1400 audit(0.0:90): avc: denied { read } for comm="getprop" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=4353 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file permissive=0
+12-31 14:10:58.951  2005  2054 I am_uid_running: 10022
+12-31 14:10:58.974  2005  2054 I am_proc_start: [0,4730,10022,com.lenovo.lsf.device,broadcast,com.lenovo.lsf.device/com.lenovo.lsf.upgrade.UpgradeReceiver]
+12-31 14:10:58.982  2005  2097 I power_sleep_requested: 0
+12-31 14:10:58.994  2005  3088 I am_proc_bound: [0,4730,com.lenovo.lsf.device]
+12-31 14:10:59.143  4369  4369 I auditd  : type=1400 audit(0.0:91): avc: denied { read } for comm="encent.mobileqq" name="address" dev="sysfs" ino=50096 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:59.207  2005  3089 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast PNW.dismiss_warning_dialog from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:10:59.392  2005  3057 I am_proc_start: [0,4811,10055,com.zui.sdac:cns,broadcast,com.zui.sdac/.cns.CNSClientReceiver]
+12-31 14:10:59.418  2005  3096 I am_proc_bound: [0,4811,com.zui.sdac:cns]
+12-31 14:10:59.463  4369  4369 I auditd  : type=1400 audit(0.0:92): avc: denied { read } for comm="encent.mobileqq" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:10:59.742  2005  3096 I am_proc_start: [0,4866,10064,com.zui.xlog:usage,service,com.zui.xlog/com.zui.usagecollector.UsageCollectorService]
+12-31 14:10:59.745  2005  2091 I sysui_view_visibility: [223,100]
+12-31 14:10:59.745  2005  2091 I sysui_multi_action: [757,223,758,1]
+12-31 14:10:59.775  2005  2029 I am_proc_bound: [0,4866,com.zui.xlog:usage]
+12-31 14:10:59.797  2005  2005 I sysui_multi_action: [757,198,758,2,759,3]
+12-31 14:10:59.797  2005  2005 I power_screen_state: [0,3,0,0,0]
+12-31 14:10:59.797  2005  2005 I screen_toggled: 0
+12-31 14:10:59.797  2005  2005 I sysui_histogram: [screen_timeout,60]
+12-31 14:10:59.797  2005  2005 I sysui_multi_action: [757,804,799,screen_timeout,801,60,802,1]
+12-31 14:10:59.797  2005  2005 I power_screen_broadcast_send: 1
+12-31 14:10:59.799  2005  3100 I sysui_view_visibility: [127,0]
+12-31 14:10:59.799  2005  3100 I sysui_multi_action: [757,127,758,2]
+12-31 14:10:59.799  2005  3100 I notification_panel_hidden: 
+12-31 14:10:59.828  2005  3096 I am_proc_start: [0,4894,10200,com.sohu.inputmethod.sogou:classic,broadcast,com.sohu.inputmethod.sogou/com.sogou.androidtool.receiver.SupportReceiver]
+12-31 14:10:59.852  2005  3100 I am_proc_bound: [0,4894,com.sohu.inputmethod.sogou:classic]
+12-31 14:10:59.973  4314  4314 I auditd  : type=1400 audit(0.0:93): avc: denied { read } for comm="beacon-thread-2" name="address" dev="sysfs" ino=50096 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:59.983  4314  4314 I auditd  : type=1400 audit(0.0:94): avc: denied { read } for comm="beacon-thread-2" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:59.983  4314  4314 I auditd  : type=1400 audit(0.0:95): avc: denied { read } for comm="beacon-thread-2" name="name" dev="sysfs" ino=37054 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:59.983  4314  4314 I auditd  : type=1400 audit(0.0:96): avc: denied { read } for comm="beacon-thread-2" name="cid" dev="sysfs" ino=37045 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:10:59.993  4314  4314 I auditd  : type=1400 audit(0.0:97): avc: denied { read } for comm="beacon-thread-2" name="address" dev="sysfs" ino=50096 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:11:00.086  2005  2005 I power_screen_broadcast_done: [1,288,1]
+12-31 14:11:00.086  2005  2005 I power_screen_broadcast_send: 1
+12-31 14:11:00.263  4894  4894 I auditd  : type=1400 audit(0.0:98): avc: denied { read } for comm="Thread-2" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:11:00.524  2005  2005 I power_screen_broadcast_done: [0,438,1]
+12-31 14:11:00.567  2005  2336 I am_uid_running: 10024
+12-31 14:11:00.584  2005  2336 I am_proc_start: [0,4990,10024,com.lenovo.lsf,service,com.lenovo.lsf/.account.auth.AuthenticationService]
+12-31 14:11:00.606  2005  3100 I am_proc_bound: [0,4990,com.lenovo.lsf]
+12-31 14:11:00.609  2005  3100 I am_uid_active: 10024
+12-31 14:11:00.677  2005  2029 I am_proc_start: [0,5009,1000,com.qualcomm.qti.qmmi,broadcast,com.qualcomm.qti.qmmi/.framework.QmmiReceiver]
+12-31 14:11:00.698  2005  3100 I am_proc_bound: [0,5009,com.qualcomm.qti.qmmi]
+12-31 14:11:01.433  2005  2005 I auditd  : type=1400 audit(0.0:99): avc: denied { syslog_read } for comm="Thread-18" scontext=u:r:system_server:s0 tcontext=u:r:kernel:s0 tclass=system permissive=0
+12-31 14:11:01.476  2005  2052 I sync    : [com.android.contacts.metadata,0,2,1693111165]
+12-31 14:11:01.485  2005  2052 I sync    : [com.google.android.gms.games,0,2,1693111165]
+12-31 14:11:01.491  2005  2052 I sync    : [com.google.android.gms.games.background,0,2,1693111165]
+12-31 14:11:01.496  2005  2052 I sync    : [com.google.android.gms.drive.sync,0,2,1693111165]
+12-31 14:11:01.531  2005  2052 I sync    : [com.google.android.gms.reminders,0,0,1693111165]
+12-31 14:11:01.536  2005  2052 I sync    : [com.google.android.gms.chromesync,0,3,1693111165]
+12-31 14:11:01.586  2005  2054 I am_proc_start: [0,5095,1000,com.qualcomm.display,broadcast,com.qualcomm.cabl/.CABLReceiver]
+12-31 14:11:01.639  2005  2336 I am_proc_start: [0,5115,10017,com.google.android.play.games.ui,content provider,com.google.android.gms/.games.provider.NotificationStubContentProvider]
+12-31 14:11:01.646  2005  2029 I am_proc_bound: [0,5095,com.qualcomm.display]
+12-31 14:11:01.666  2005  2029 I am_proc_bound: [0,5115,com.google.android.play.games.ui]
+12-31 14:11:01.673  2005  2052 I sync    : [com.android.contacts.metadata,1,2,1693111165]
+12-31 14:11:01.698  2005  2052 I sync    : [com.google.android.gms.games.background,1,2,1693111165]
+12-31 14:11:01.701  2005  2052 I sync    : [com.google.android.gms.auth.api.credentials,0,3,1693111165]
+12-31 14:11:01.706  2005  2052 I sync    : [com.google.android.gms.auth.accountstate,0,3,1693111165]
+12-31 14:11:01.770  2005  2052 I sync    : [com.google.android.gms.auth.accountstate,1,3,1693111165]
+12-31 14:11:01.777  2005  2052 I sync    : [com.google.android.gms.games,1,2,1693111165]
+12-31 14:11:01.793  2005  2052 I sync    : [com.google.android.gms.auth.api.credentials,1,3,1693111165]
+12-31 14:11:01.814  2005  2052 I sync    : [com.google.android.gms.chromesync,1,3,1693111165]
+12-31 14:11:01.819  2005  2052 I sync    : [com.google.android.gms.reminders,1,0,1693111165]
+12-31 14:11:01.862  2005  2330 I am_uid_running: 10059
+12-31 14:11:01.873  2005  2330 I am_proc_start: [0,5155,10059,com.zui.ota,broadcast,com.zui.ota/.model.ZuiOtaReceiver]
+12-31 14:11:01.893  2005  2330 I am_proc_bound: [0,5155,com.zui.ota]
+12-31 14:11:02.216  2005  2052 I sync    : [com.google.android.gms.drive.sync,1,2,1693111165]
+12-31 14:11:02.244  2005  3076 I am_proc_died: [0,2249,com.android.inputmethod.latin,0,7]
+12-31 14:11:02.244  2005  3076 I am_schedule_service_restart: [0,com.android.inputmethod.latin/.LatinIME,1000]
+12-31 14:11:02.244  2005  3076 I am_broadcast_discard_app: [0,38693682,android.intent.action.BOOT_COMPLETED,31,ResolveInfo{dde89c5 com.android.inputmethod.latin/.SystemBroadcastReceiver m=0x108000}]
+12-31 14:11:02.244  2005  3076 I am_uid_stopped: 10084
+12-31 14:11:02.249  2005  2054 I am_uid_running: 10026
+12-31 14:11:02.270  2005  2054 I am_proc_start: [0,5197,10026,com.android.managedprovisioning,broadcast,com.android.managedprovisioning/.preprovisioning.BootReminder]
+12-31 14:11:02.298  2005  3098 I am_proc_bound: [0,5197,com.android.managedprovisioning]
+12-31 14:11:02.376  2005  3096 I am_uid_running: 10052
+12-31 14:11:02.396  2005  3096 I am_proc_start: [0,5212,10052,com.android.packageinstaller,broadcast,com.android.packageinstaller/.TemporaryFileManager]
+12-31 14:11:02.418  2005  3096 I am_proc_bound: [0,5212,com.android.packageinstaller]
+12-31 14:11:02.631  2005  3057 I am_uid_running: 10005
+12-31 14:11:02.641  2005  3057 I am_proc_start: [0,5245,10005,com.android.providers.calendar,broadcast,com.android.providers.calendar/.CalendarReceiver]
+12-31 14:11:02.654  2005  3088 I am_uid_active: 10043
+12-31 14:11:02.674  2005  3098 I am_proc_bound: [0,5245,com.android.providers.calendar]
+12-31 14:11:02.902  2005  3088 I am_kill : [0,3329,com.android.keychain,906,empty #17]
+12-31 14:11:02.941  2005  3088 I am_uid_running: 10021
+12-31 14:11:02.956  2005  3088 I am_proc_start: [0,5292,10021,com.android.vending,broadcast,com.android.vending/com.google.android.finsky.boothandler.BootCompletedReceiver]
+12-31 14:11:02.981  2005  3088 I am_proc_bound: [0,5292,com.android.vending]
+12-31 14:11:03.019  2005  3088 I am_proc_died: [0,3329,com.android.keychain,906,17]
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:100): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/adbd" dev="dm-0" ino=256 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:adbd_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:101): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/atrace" dev="dm-0" ino=265 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:atrace_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:102): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/audioserver" dev="dm-0" ino=266 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:audioserver_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:103): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/blkid" dev="dm-0" ino=270 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:blkid_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:104): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/bootanimation" dev="dm-0" ino=273 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:bootanim_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:105): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/bootstat" dev="dm-0" ino=274 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:bootstat_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:106): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/bt_logger" dev="dm-0" ino=276 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:bt_logger_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:107): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/cameraserver" dev="dm-0" ino=284 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:cameraserver_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:108): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/clatd" dev="dm-0" ino=293 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:clatd_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:109): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/cppreopts.sh" dev="dm-0" ino=301 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:cppreopts_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:110): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/dexoptanalyzer" dev="dm-0" ino=316 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:dexoptanalyzer_exec:s0 tclass=file permissive=0
+12-31 14:11:03.203  3717  3717 I auditd  : type=1400 audit(0.0:111): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/dnsmasq" dev="dm-0" ino=321 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:dnsmasq_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:112): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/dpmd" dev="dm-0" ino=324 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:dpmd_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:113): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/drmserver" dev="dm-0" ino=325 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:drmserver_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:114): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/dumpstate" dev="dm-0" ino=327 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:dumpstate_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:115): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/dun-server" dev="dm-0" ino=329 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:dun-server_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:116): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/e2fsck" dev="dm-0" ino=330 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:fsck_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:117): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/e2fsdroid" dev="dm-0" ino=331 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:e2fs_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:118): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/fsck.f2fs" dev="dm-0" ino=348 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:fsck_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:119): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/fsck_msdos" dev="dm-0" ino=349 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:fsck_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:120): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/gatekeeperd" dev="dm-0" ino=350 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:gatekeeperd_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:121): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/healthd" dev="dm-0" ino=359 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:healthd_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:122): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/hwdiag" dev="dm-0" ino=366 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:hwdiag_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:123): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/hwservicemanager" dev="dm-0" ino=367 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:hwservicemanager_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:124): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/idmap" dev="dm-0" ino=369 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:idmap_exec:s0 tclass=file permissive=0
+12-31 14:11:03.213  3717  3717 I auditd  : type=1400 audit(0.0:125): avc: denied { getattr } for comm="Binder:3717_3" path="/system/bin/incident" dev="dm-0" ino=373 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:incident_exec:s0 tclass=file permissive=0
+12-31 14:11:03.244  2005  2054 I am_uid_running: 10084
+12-31 14:11:03.258  2005  2054 I am_proc_start: [0,5315,10084,com.android.inputmethod.latin,service,com.android.inputmethod.latin/.LatinIME]
+12-31 14:11:03.283  2005  2447 I am_proc_bound: [0,5315,com.android.inputmethod.latin]
+12-31 14:11:03.291  2005  2447 I am_uid_active: 10084
+12-31 14:11:03.298  2005  3057 I am_kill : [0,4094,com.google.android.gms.ui,906,empty #17]
+12-31 14:11:03.393  2005  3076 I am_proc_died: [0,4094,com.google.android.gms.ui,906,17]
+12-31 14:11:04.055  2005  2207 I sysui_histogram: [power_consecutive_short_tap_count,1]
+12-31 14:11:04.056  2005  2207 I sysui_multi_action: [757,804,799,power_consecutive_short_tap_count,801,1,802,1]
+12-31 14:11:04.056  2005  2207 I sysui_histogram: [power_double_tap_interval,40399]
+12-31 14:11:04.056  2005  2207 I sysui_multi_action: [757,804,799,power_double_tap_interval,801,40399,802,1]
+12-31 14:11:04.057  2005  2005 I screen_toggled: 1
+12-31 14:11:04.057  2005  2005 I power_screen_broadcast_send: 1
+12-31 14:11:04.068  2264  2264 I sysui_histogram: [note_load,0]
+12-31 14:11:04.068  2264  2264 I sysui_multi_action: [757,804,799,note_load,801,0,802,1]
+12-31 14:11:04.068  2005  2447 I sysui_view_visibility: [127,100]
+12-31 14:11:04.068  2005  2447 I sysui_multi_action: [757,127,758,1]
+12-31 14:11:04.068  2005  2447 I sysui_histogram: [note_load,0]
+12-31 14:11:04.069  2005  2447 I sysui_multi_action: [757,804,799,note_load,801,0,802,1]
+12-31 14:11:04.069  2005  2447 I notification_panel_revealed: 0
+12-31 14:11:04.086  2005  2005 I notification_cancel_all: [1000,2005,com.android.vending,0,0,0,17,NULL]
+12-31 14:11:04.086  2005  2005 I chatty  : uid=1000 system_server identical 2 lines
+12-31 14:11:04.086  2005  2005 I notification_cancel_all: [1000,2005,com.android.vending,0,0,0,17,NULL]
+12-31 14:11:04.114  2005  2005 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.zui.smart_doze_pre_clean_cancel from system 2005:system/1000 pkg android]
+12-31 14:11:04.129  2005  2005 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.zui.smart_doze_pre_clean_cancel from system 2005:system/1000 pkg android]
+12-31 14:11:04.320  2005  2005 I power_screen_broadcast_done: [1,263,1]
+12-31 14:11:04.348  2005  2097 I sysui_multi_action: [757,198,758,1,759,0,793,295]
+12-31 14:11:04.348  2005  2097 I power_screen_state: [1,0,0,0,295]
+12-31 14:11:04.363  2005  2005 I auditd  : type=1400 audit(0.0:469): avc: denied { execute } for comm="system_server" path="/data/dalvik-cache/arm64/system@app@AntHalService@AntHalService.apk@classes.dex" dev="dm-1" ino=1049253 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:11:04.363  2005  2005 I auditd  : type=1400 audit(0.0:470): avc: denied { execute } for comm="system_server" path="/data/dalvik-cache/arm64/system@app@AntHalService@AntHalService.apk@classes.dex" dev="dm-1" ino=1049253 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:11:04.363  2005  2005 I auditd  : type=1400 audit(0.0:471): avc: denied { write } for comm="system_server" name="system@app@AntHalService@AntHalService.apk@classes.vdex" dev="dm-1" ino=1052319 scontext=u:r:system_server:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=file permissive=0
+12-31 14:11:04.367  2005  2447 I am_kill : [0,3197,com.android.printspooler,906,empty #17]
+12-31 14:11:04.372  2005  2091 I sysui_view_visibility: [223,0]
+12-31 14:11:04.372  2005  2091 I sysui_multi_action: [757,223,758,2]
+12-31 14:11:04.372  2005  2091 I sysui_histogram: [dozing_minutes,0]
+12-31 14:11:04.372  2005  2091 I sysui_multi_action: [757,804,799,dozing_minutes,801,0,802,1]
+12-31 14:11:04.406  2005  2005 I am_uid_running: 10006
+12-31 14:11:04.455  2005  2005 I am_proc_start: [0,5443,10006,com.google.android.configupdater,broadcast,com.google.android.configupdater/.MainReceiver]
+12-31 14:11:04.464  2005  2447 I am_proc_bound: [0,5443,com.google.android.configupdater]
+12-31 14:11:04.500  2005  2447 I am_proc_died: [0,3197,com.android.printspooler,906,17]
+12-31 14:11:04.501  2005  2447 I am_uid_stopped: 10086
+12-31 14:11:04.529  2005  2448 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.zui.safecenter.action.normal_icon from system 2934:com.zui.safecenter/1000 pkg com.zui.safecenter]
+12-31 14:11:04.677  2005  2054 I am_uid_running: 10019
+12-31 14:11:04.699  2005  2054 I am_proc_start: [0,5484,10019,com.google.android.onetimeinitializer,broadcast,com.google.android.onetimeinitializer/.OneTimeInitializerReceiver]
+12-31 14:11:04.718  2005  3057 I am_proc_bound: [0,5484,com.google.android.onetimeinitializer]
+12-31 14:11:04.753  2005  5498 I am_uid_running: 10033
+12-31 14:11:04.776  2005  5498 I am_proc_start: [0,5500,10033,com.ted.number,service,com.ted.number/.service.NumberService]
+12-31 14:11:04.802  2005  3057 I am_proc_bound: [0,5500,com.ted.number]
+12-31 14:11:04.804  2005  3057 I am_uid_active: 10033
+12-31 14:11:04.856  2005  3076 I am_uid_running: 10020
+12-31 14:11:04.873  2005  3076 I am_proc_start: [0,5518,10020,com.google.android.partnersetup,broadcast,com.google.android.partnersetup/.GooglePartnerSetup]
+12-31 14:11:04.882  2005  3076 I am_kill : [0,4577,com.lenovo.leos.appstore,906,empty #17]
+12-31 14:11:04.907  2005  2448 I am_proc_bound: [0,5518,com.google.android.partnersetup]
+12-31 14:11:04.951  2005  2052 I am_pss  : [2529,1001,com.qualcomm.qcrilmsgtunnel,3822592,3244032,0]
+12-31 14:11:04.991  2005  3057 I am_proc_died: [0,4577,com.lenovo.leos.appstore,906,17]
+12-31 14:11:04.992  2005  3057 I am_uid_stopped: 10025
+12-31 14:11:05.025  2005  3076 I am_proc_start: [0,5555,10033,com.ted.number:remote,service,com.ted.number/com.baidu.location.f]
+12-31 14:11:05.060  2005  2380 I am_proc_bound: [0,5555,com.ted.number:remote]
+12-31 14:11:05.293  2005  3076 I am_uid_running: 10080
+12-31 14:11:05.302  2005  3076 I am_proc_start: [0,5603,10080,com.google.process.gapps,broadcast,com.google.android.syncadapters.contacts/.ContactsSyncAdapterBroadcastReceiver]
+12-31 14:11:05.304  2005  2380 I am_kill : [0,4866,com.zui.xlog:usage,906,empty #17]
+12-31 14:11:05.316  2005  3089 I am_proc_bound: [0,5603,com.google.process.gapps]
+12-31 14:11:05.366  2005  3089 I am_proc_died: [0,4866,com.zui.xlog:usage,906,17]
+12-31 14:11:05.508  2005  3057 I am_uid_running: 10108
+12-31 14:11:05.529  2005  3057 I am_proc_start: [0,5631,10108,com.lenovo.leos.cloud.sync,broadcast,com.lenovo.leos.cloud.sync/.common.auto.SystemBootReceiver]
+12-31 14:11:05.544  2005  2448 I am_proc_bound: [0,5631,com.lenovo.leos.cloud.sync]
+12-31 14:11:05.566  2005  3057 I am_kill : [0,4894,com.sohu.inputmethod.sogou:classic,906,empty #17]
+12-31 14:11:05.645  2005  3057 I am_proc_died: [0,4894,com.sohu.inputmethod.sogou:classic,906,17]
+12-31 14:11:06.040  2005  2690 I am_kill : [0,5009,com.qualcomm.qti.qmmi,906,empty #17]
+12-31 14:11:06.059  2005  3076 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.dmyk.android.telephony.action.SIM_STATE_CHANGED from system 3026:com.lenovo.regservice/1001 pkg com.lenovo.regservice]
+12-31 14:11:06.067  2005  3089 I am_proc_died: [0,5009,com.qualcomm.qti.qmmi,906,17]
+12-31 14:11:06.072  2005  3076 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.dmyk.android.telephony.action.SIM_STATE_CHANGED from system 3026:com.lenovo.regservice/1001 pkg com.lenovo.regservice]
+12-31 14:11:06.098  2005  3089 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast android.dmyk.net.conn.CONNECTIVITY_CHANGE from system 3026:com.lenovo.regservice/1001 pkg com.lenovo.regservice]
+12-31 14:11:06.100  2005  3076 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast com.dmyk.android.telephony.action.SIM_STATE_CHANGED from system 3026:com.lenovo.regservice/1001 pkg com.lenovo.regservice]
+12-31 14:11:06.115  2005  2690 I am_proc_start: [0,5704,1000,com.motorola.motocit,broadcast,com.motorola.motocit/.CQATestBootReceiver]
+12-31 14:11:06.149  2005  3089 I am_proc_bound: [0,5704,com.motorola.motocit]
+12-31 14:11:06.253  2005  2690 I am_kill : [0,4990,com.lenovo.lsf,906,empty #17]
+12-31 14:11:06.344  2005  2005 I am_uid_running: 10089
+12-31 14:11:06.366  2005  2005 I am_proc_start: [0,5735,10089,com.qualcomm.qti.StatsPollManager,broadcast,com.qualcomm.qti.StatsPollManager/.StatsPollManagerReceiver]
+12-31 14:11:06.371  2005  2448 I am_proc_died: [0,4990,com.lenovo.lsf,906,17]
+12-31 14:11:06.371  2005  2448 I am_uid_stopped: 10024
+12-31 14:11:06.409  2005  3089 I am_proc_bound: [0,5735,com.qualcomm.qti.StatsPollManager]
+12-31 14:11:06.519  2005  3057 I am_proc_start: [0,5772,1000,com.qualcomm.qti.callenhancement,broadcast,com.qualcomm.qti.callenhancement/.BootCompletedReceiver]
+12-31 14:11:06.540  2005  2690 I am_proc_bound: [0,5772,com.qualcomm.qti.callenhancement]
+12-31 14:11:06.650  2005  2029 I am_proc_start: [0,5789,1000,com.qualcomm.qti.qdma,broadcast,com.qualcomm.qti.qdma/.app.BootReceiver]
+12-31 14:11:06.659  2005  3057 I am_proc_bound: [0,5789,com.qualcomm.qti.qdma]
+12-31 14:11:06.844  2005  2690 I am_proc_start: [0,5818,1000,com.qualcomm.qti.smq,content provider,com.qualcomm.qti.smq/.providers.SMQContentProvider]
+12-31 14:11:06.865  2005  2029 I am_proc_bound: [0,5818,com.qualcomm.qti.smq]
+12-31 14:11:06.984  2005  2029 I am_proc_start: [0,5840,1000,com.qualcomm.qti.smcinvokepkgmgr,broadcast,com.qualcomm.qti.smcinvokepkgmgr/.SmcInvokeBroadcastReceiver]
+12-31 14:11:07.032  2005  2029 I am_proc_bound: [0,5840,com.qualcomm.qti.smcinvokepkgmgr]
+12-31 14:11:07.074  2005  2052 I am_pss  : [2692,10061,com.zui.zhealthy,11036672,9850880,0]
+12-31 14:11:07.145  2005  2029 I am_uid_running: 10024
+12-31 14:11:07.155  2005  2029 I am_proc_start: [0,5865,10024,com.lenovo.lsf,service,com.lenovo.lsf/.account.auth.AuthenticationService]
+12-31 14:11:07.170  2005  2029 I am_proc_bound: [0,5865,com.lenovo.lsf]
+12-31 14:11:07.173  2005  2029 I am_uid_active: 10024
+12-31 14:11:07.278  2005  2690 I am_kill : [0,2650,com.zui.deskclock,906,empty #17]
+12-31 14:11:07.311  2005  3057 I am_proc_died: [0,2650,com.zui.deskclock,906,17]
+12-31 14:11:07.312  2005  3057 I am_uid_stopped: 10096
+12-31 14:11:07.673  4369  4369 I auditd  : type=1400 audit(0.0:472): avc: denied { read } for comm="Automator_1" name="version" dev="proc" ino=4026532088 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:11:08.663  4369  4369 I auditd  : type=1400 audit(0.0:473): avc: denied { read } for comm="Automator_4" name="version" dev="proc" ino=4026532088 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:11:09.760  2005  2052 I am_pss  : [3115,10218,com.jd.jrapp:ldlkldeviceservice,15467520,10297344,0]
+12-31 14:11:09.798  2005  2052 I am_pss  : [3380,10091,com.tencent.android.location,6156288,4710400,0]
+12-31 14:11:09.824  2005  2052 I am_pss  : [3109,10092,com.android.smspush,2881536,2387968,0]
+12-31 14:11:10.753  2005  2052 I am_pss  : [3529,10218,com.jd.jrapp,25858048,19873792,0]
+12-31 14:11:10.798  2005  2052 I am_pss  : [3582,10218,com.jd.jrapp:xg_service_v3,17011712,11329536,0]
+12-31 14:11:10.830  2005  2052 I am_pss  : [3643,10058,com.zui.utouchcore:utouch,2724864,2088960,0]
+12-31 14:11:10.857  2005  2052 I am_pss  : [3627,10058,com.android.systemui:sceneservice,10752000,7262208,0]
+12-31 14:11:12.446  2005  2052 I am_pss  : [3846,10218,com.jd.jrapp:jdpush,13530112,8724480,0]
+12-31 14:11:12.676  2005  2092 I am_uid_running: 10016
+12-31 14:11:12.696  2005  2092 I am_proc_start: [0,6032,10016,com.google.android.ext.services,service,com.google.android.ext.services/android.ext.services.storage.CacheQuotaServiceImpl]
+12-31 14:11:12.708  2005  2447 I am_proc_bound: [0,6032,com.google.android.ext.services]
+12-31 14:11:12.711  2005  2447 I am_uid_active: 10016
+12-31 14:11:12.981  2005  3076 I am_kill : [0,3668,com.zui.auservice,906,empty #17]
+12-31 14:11:12.999  2005  3076 I am_proc_died: [0,3668,com.zui.auservice,906,17]
+12-31 14:11:14.059  2005  2097 I power_sleep_requested: 0
+12-31 14:11:14.619  2005  2448 I am_proc_start: [0,6059,1000,com.zui.antitheft,broadcast,com.zui.antitheft/.receiver.BootBroadcast]
+12-31 14:11:14.631  2005  3089 I am_proc_bound: [0,6059,com.zui.antitheft]
+12-31 14:11:14.638  2005  2052 I am_pss  : [2453,1000,com.android.settings,11338752,9424896,0]
+12-31 14:11:14.761  2005  2091 I sysui_view_visibility: [223,100]
+12-31 14:11:14.761  2005  2091 I sysui_multi_action: [757,223,758,1]
+12-31 14:11:14.784  2005  3076 I am_proc_start: [0,6079,1000,com.zui.auservice,broadcast,com.zui.auservice/.download.DownloadReceiver]
+12-31 14:11:14.787  2005  2091 I am_kill : [0,5095,com.qualcomm.display,906,empty #17]
+12-31 14:11:14.807  2005  2005 I sysui_multi_action: [757,198,758,2,759,3]
+12-31 14:11:14.807  2005  2005 I power_screen_state: [0,3,0,0,0]
+12-31 14:11:14.807  2005  2005 I screen_toggled: 0
+12-31 14:11:14.807  2005  2005 I sysui_histogram: [screen_timeout,60]
+12-31 14:11:14.807  2005  2005 I sysui_multi_action: [757,804,799,screen_timeout,801,60,802,1]
+12-31 14:11:14.808  2005  2005 I power_screen_broadcast_send: 1
+12-31 14:11:14.809  2005  2029 I am_proc_bound: [0,6079,com.zui.auservice]
+12-31 14:11:14.810  2005  3076 I sysui_view_visibility: [127,0]
+12-31 14:11:14.810  2005  3076 I sysui_multi_action: [757,127,758,2]
+12-31 14:11:14.810  2005  3076 I notification_panel_hidden: 
+12-31 14:11:14.839  2005  2380 I am_proc_died: [0,5095,com.qualcomm.display,906,17]
+12-31 14:11:15.136  2893  4230 I gtalk_connection: 16914433
+12-31 14:11:15.225  2005  3057 I am_uid_running: 10042
+12-31 14:11:15.241  2005  3057 I am_proc_start: [0,6139,10042,com.zui.contacts,broadcast,com.zui.contacts/com.android.contacts.interactions.OnBootOrUpgradeReceiver]
+12-31 14:11:15.243  2005  2380 I am_kill : [0,3438,com.google.android.marvin.talkback,906,empty #17]
+12-31 14:11:15.254  2005  2447 I am_proc_died: [0,3438,com.google.android.marvin.talkback,906,17]
+12-31 14:11:15.254  2005  2447 I am_uid_stopped: 10103
+12-31 14:11:15.259  2005  2005 I power_screen_broadcast_done: [0,451,1]
+12-31 14:11:15.270  2005  2448 I am_proc_bound: [0,6139,com.zui.contacts]
+12-31 14:11:15.381  2005  2447 I am_proc_start: [0,6160,1000,com.zui.datadebugger,broadcast,com.zui.datadebugger/.IntentReceiver]
+12-31 14:11:15.385  2005  2690 I am_kill : [0,2735,com.android.cellbroadcastreceiver,906,empty #17]
+12-31 14:11:15.400  2005  2447 I am_proc_died: [0,2735,com.android.cellbroadcastreceiver,906,17]
+12-31 14:11:15.400  2005  2447 I am_uid_stopped: 10008
+12-31 14:11:15.410  2005  2448 I am_proc_bound: [0,6160,com.zui.datadebugger]
+12-31 14:11:15.486  2005  2448 I am_kill : [0,5197,com.android.managedprovisioning,906,empty #17]
+12-31 14:11:15.504  2005  2447 I am_uid_running: 10051
+12-31 14:11:15.527  2005  2447 I am_proc_start: [0,6174,10051,com.zui.mms,broadcast,com.zui.mms/com.android.messaging.receiver.BootAndPackageReplacedReceiver]
+12-31 14:11:15.528  2005  3088 I am_proc_died: [0,5197,com.android.managedprovisioning,906,17]
+12-31 14:11:15.529  2005  3088 I am_uid_stopped: 10026
+12-31 14:11:15.535  2005  2447 I am_proc_bound: [0,6174,com.zui.mms]
+12-31 14:11:15.574  2005  3089 I am_proc_start: [0,6189,1000,com.android.keychain,service,com.android.keychain/.KeyChainService]
+12-31 14:11:15.595  2005  2447 I am_proc_bound: [0,6189,com.android.keychain]
+12-31 14:11:15.652  2005  3089 I am_kill : [0,5212,com.android.packageinstaller,906,empty #17]
+12-31 14:11:15.664  2005  3089 I am_proc_died: [0,5212,com.android.packageinstaller,906,17]
+12-31 14:11:15.664  2005  3089 I am_uid_stopped: 10052
+12-31 14:11:15.938  2005  3057 I am_uid_running: 10098
+12-31 14:11:15.957  2005  3057 I am_proc_start: [0,6243,10098,com.zui.networkaclr,broadcast,com.zui.networkaclr/.receiver.BootCompletedReceiver]
+12-31 14:11:15.988  2005  2447 I am_proc_bound: [0,6243,com.zui.networkaclr]
+12-31 14:11:16.104  2005  3057 I am_uid_running: 10057
+12-31 14:11:16.119  2005  3057 I am_proc_start: [0,6278,10057,com.zui.simcontacts,broadcast,com.zui.simcontacts/com.qualcomm.simcontacts.SimStateReceiver]
+12-31 14:11:16.141  2005  3089 I am_proc_bound: [0,6278,com.zui.simcontacts]
+12-31 14:11:17.146  2005  2054 I am_proc_start: [0,6296,1001,com.zui.simsettings,broadcast,com.zui.simsettings/.initdata.CardInfoReceiver]
+12-31 14:11:17.163  2005  3057 I am_proc_bound: [0,6296,com.zui.simsettings]
+12-31 14:11:17.171  2005  2052 I am_pss  : [2893,10017,com.google.android.gms.persistent,46314496,35606528,0]
+12-31 14:11:17.240  2005  2052 I am_pss  : [3509,10017,com.google.android.gms,56580096,45760512,0]
+12-31 14:11:17.253  2005  3076 I am_kill : [0,5245,com.android.providers.calendar,906,empty #17]
+12-31 14:11:17.268  2005  3089 I am_proc_died: [0,5245,com.android.providers.calendar,906,17]
+12-31 14:11:17.269  2005  3089 I am_uid_stopped: 10005
+12-31 14:11:17.286  2005  3076 I am_uid_running: 10094
+12-31 14:11:17.307  2005  3076 I am_proc_start: [0,6313,10094,com.zui.zroaming,broadcast,com.zui.zroaming/com.redteamobile.roaming.receiver.BootCompletedReceiver]
+12-31 14:11:17.310  2005  2052 I am_pss  : [4245,10017,com.google.android.gms.unstable,10274816,6086656,0]
+12-31 14:11:17.325  2005  3076 I am_proc_bound: [0,6313,com.zui.zroaming]
+12-31 14:11:17.497  2005  3089 I am_uid_running: 1002
+12-31 14:11:17.515  2005  3089 I am_proc_start: [0,6328,1002,com.android.bluetooth,broadcast,org.codeaurora.bt_wipower/.a4wp.BTEventHandler]
+12-31 14:11:17.519  2005  3089 I am_kill : [0,2719,com.android.dialer,906,empty #17]
+12-31 14:11:17.551  2005  2447 I am_proc_died: [0,2719,com.android.dialer,906,17]
+12-31 14:11:17.552  2005  2447 I am_uid_stopped: 10043
+12-31 14:11:17.559  2005  3089 I am_proc_bound: [0,6328,com.android.bluetooth]
+12-31 14:11:17.603  2005  2052 I am_pss  : [4530,10121,com.tencent.mm:push,30334976,17637376,0]
+12-31 14:11:17.693  6328  6328 I auditd  : type=1400 audit(0.0:474): avc: denied { getattr } for comm="droid.bluetooth" path="/mnt/media_rw" dev="tmpfs" ino=14421 scontext=u:r:bluetooth:s0 tcontext=u:object_r:mnt_media_rw_file:s0 tclass=dir permissive=0
+12-31 14:11:17.755  2005  2054 I am_kill : [0,5443,com.google.android.configupdater,906,empty #17]
+12-31 14:11:17.778  2005  3089 I am_uid_running: 10112
+12-31 14:11:17.798  2005  3089 I am_proc_start: [0,6342,10112,com.zui.calendar,broadcast,com.zui.calendar/.alerts.AlertReceiver]
+12-31 14:11:17.799  2005  6340 I am_proc_died: [0,5443,com.google.android.configupdater,906,17]
+12-31 14:11:17.799  2005  6340 I am_uid_stopped: 10006
+12-31 14:11:17.816  2005  2447 I am_proc_bound: [0,6342,com.zui.calendar]
+12-31 14:11:18.353  2974  2974 I auditd  : type=1400 audit(0.0:475): avc: denied { read } for comm=".userexperience" name="u:object_r:firstboot_prop:s0" dev="tmpfs" ino=4337 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:firstboot_prop:s0 tclass=file permissive=0
+12-31 14:11:19.170  2005  2052 I am_pss  : [4314,10132,com.tencent.mobileqq:MSF,30487552,23040000,0]
+12-31 14:11:20.782  2005  2447 I am_kill : [0,4465,com.sohu.inputmethod.sogou,906,empty #17]
+12-31 14:11:20.796  2005  3087 I am_proc_died: [0,4465,com.sohu.inputmethod.sogou,906,17]
+12-31 14:11:20.796  2005  3087 I am_uid_stopped: 10200
+12-31 14:11:20.823  2005  2052 I am_pss  : [3213,10064,com.zui.xlog,5776384,5115904,0]
+12-31 14:11:20.861  2005  2052 I am_pss  : [2674,10037,com.lenovo.process.weathercenter,5291008,4653056,0]
+12-31 14:11:20.890  2005  2052 I am_pss  : [4811,10055,com.zui.sdac:cns,7093248,5660672,0]
+12-31 14:11:20.933  2005  2052 I am_pss  : [4369,10132,com.tencent.mobileqq,110248960,99889152,0]
+12-31 14:11:20.956  2005  2052 I am_pss  : [4730,10022,com.lenovo.lsf.device,5968896,4743168,0]
+12-31 14:11:21.539  2005  2052 I am_pss  : [4272,10121,com.tencent.mm:exdevice,25509888,13701120,0]
+12-31 14:11:21.572  2005  2054 I am_proc_start: [0,6392,1001,com.motorola.autoregistration:smsautoreg,broadcast,com.motorola.autoregistration/.AutoRegSimStateReceiver]
+12-31 14:11:21.587  2005  2028 I am_proc_bound: [0,6392,com.motorola.autoregistration:smsautoreg]
+12-31 14:11:21.594  2005  2052 I am_pss  : [3717,10121,com.tencent.mm,127848448,111595520,0]
+12-31 14:11:21.743  4217  4229 I contacts_aggregation: [1546236681743,-46]
+12-31 14:11:21.754  4217  4229 I contacts_aggregation: [11,46]
+12-31 14:11:21.758  2005  3087 I am_kill : [0,5484,com.google.android.onetimeinitializer,906,empty #17]
+12-31 14:11:21.773  2005  3031 I am_kill : [0,5115,com.google.android.play.games.ui,906,empty #17]
+12-31 14:11:21.796  2005  3096 I am_proc_died: [0,5484,com.google.android.onetimeinitializer,906,17]
+12-31 14:11:21.796  2005  3096 I am_uid_stopped: 10019
+12-31 14:11:21.807  2005  6340 I am_proc_died: [0,5115,com.google.android.play.games.ui,906,17]
+12-31 14:11:21.829  2005  3031 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236681996]
+12-31 14:11:21.829  2005  6340 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast android.intent.action.SIM_SETTING_INFO_CHANGED from system 6296:com.zui.simsettings/1001 pkg com.zui.simsettings]
+12-31 14:11:21.830  2005  3031 I netstats_wifi_sample: [243494,926,184431,1132,242966,931,168695,1121,242966,931,168695,1121,1546236681996]
+12-31 14:11:21.992  2005  2054 I am_uid_running: 10025
+12-31 14:11:22.006  2005  2054 I am_proc_start: [0,6418,10025,com.lenovo.leos.appstore,broadcast,com.lenovo.leos.appstore/.receiver.ConnectivityChangeReceiver]
+12-31 14:11:22.032  2005  6340 I am_proc_bound: [0,6418,com.lenovo.leos.appstore]
+12-31 14:11:22.323  2005  6340 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236682491]
+12-31 14:11:22.324  2005  6340 I netstats_wifi_sample: [243546,927,184633,1135,243018,932,168855,1124,243018,932,168855,1124,1546236682491]
+12-31 14:11:22.536  2005  3031 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236682703]
+12-31 14:11:22.536  2005  3031 I netstats_wifi_sample: [243546,927,184633,1135,243018,932,168855,1124,243018,932,168855,1124,1546236682703]
+12-31 14:11:22.563  6454  6454 I auditd  : type=1400 audit(0.0:476): avc: denied { read } for comm="getprop" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=4353 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file permissive=0
+12-31 14:11:22.621  2005  2054 I am_kill : [0,5518,com.google.android.partnersetup,906,empty #17]
+12-31 14:11:22.679  2005  2052 I am_pss  : [5155,10059,com.zui.ota,4320256,3792896,0]
+12-31 14:11:22.736  2005  6340 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236682904]
+12-31 14:11:22.737  2005  6340 I netstats_wifi_sample: [243704,930,185124,1140,243170,935,169276,1129,243170,935,169276,1129,1546236682904]
+12-31 14:11:22.737  2005  3096 I am_proc_start: [0,6487,10064,com.zui.xlog:usage,service,com.zui.xlog/com.zui.usagecollector.UsageCollectorService]
+12-31 14:11:22.740  2005  3089 I am_proc_died: [0,5518,com.google.android.partnersetup,906,17]
+12-31 14:11:22.740  2005  3089 I am_uid_stopped: 10020
+12-31 14:11:22.781  2005  3096 I am_uid_running: 10200
+12-31 14:11:22.818  2005  3096 I am_proc_start: [0,6501,10200,com.sohu.inputmethod.sogou,broadcast,com.sohu.inputmethod.sogou/com.sohu.inputmethod.settings.status.TrafficMonitorReceiver]
+12-31 14:11:22.819  2005  3089 I am_proc_bound: [0,6487,com.zui.xlog:usage]
+12-31 14:11:22.837  2005  3096 I am_proc_bound: [0,6501,com.sohu.inputmethod.sogou]
+12-31 14:11:22.998  2005  3098 I am_kill : [0,5603,com.google.process.gapps,906,empty #17]
+12-31 14:11:23.043  6501  6501 I auditd  : type=1400 audit(0.0:477): avc: denied { read } for comm="Thread-2" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:11:23.045  2005  3098 I am_proc_died: [0,5603,com.google.process.gapps,906,17]
+12-31 14:11:23.046  2005  3098 I am_uid_stopped: 10080
+12-31 14:11:23.078  2005  3031 I am_proc_start: [0,6548,10200,com.sohu.inputmethod.sogou:classic,broadcast,com.sohu.inputmethod.sogou/com.sogou.androidtool.receiver.SupportReceiver]
+12-31 14:11:23.082  2005  3031 I am_kill : [0,5631,com.lenovo.leos.cloud.sync,906,empty #17]
+12-31 14:11:23.108  2005  3031 I am_proc_bound: [0,6548,com.sohu.inputmethod.sogou:classic]
+12-31 14:11:23.123  2005  3087 I am_proc_died: [0,5631,com.lenovo.leos.cloud.sync,906,17]
+12-31 14:11:23.124  2005  3087 I am_uid_stopped: 10108
+12-31 14:11:23.243  6548  6548 I auditd  : type=1400 audit(0.0:478): avc: denied { read } for comm="Thread-2" name="anr" dev="dm-1" ino=2621441 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:anr_data_file:s0 tclass=dir permissive=0
+12-31 14:11:23.378  2005  2052 I am_pss  : [5315,10084,com.android.inputmethod.latin,7615488,6602752,0]
+12-31 14:11:23.518  2005  2336 I am_uid_running: 10108
+12-31 14:11:23.520  2005  3098 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236683687]
+12-31 14:11:23.520  2005  3098 I netstats_wifi_sample: [243988,932,185481,1144,243454,937,169577,1133,243454,937,169577,1133,1546236683687]
+12-31 14:11:23.533  2005  2336 I am_proc_start: [0,6583,10108,com.lenovo.leos.cloud.sync,broadcast,com.lenovo.leos.cloud.sync/.common.auto.FinishBindingReceiver]
+12-31 14:11:23.585  2005  2336 I am_proc_bound: [0,6583,com.lenovo.leos.cloud.sync]
+12-31 14:11:23.712  2005  2452 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236683880]
+12-31 14:11:23.713  2005  2452 I netstats_wifi_sample: [243988,932,185481,1144,243454,937,169577,1133,243454,937,169577,1133,1546236683880]
+12-31 14:11:23.880  2005  2452 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236684048]
+12-31 14:11:23.881  2005  2452 I netstats_wifi_sample: [244186,934,185857,1147,243652,939,169911,1136,243652,939,169911,1136,1546236684048]
+12-31 14:11:23.915  2005  3098 I am_kill : [0,5704,com.motorola.motocit,906,empty #17]
+12-31 14:11:23.981  2005  2336 I am_proc_died: [0,5704,com.motorola.motocit,906,17]
+12-31 14:11:24.053  2005  2452 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236684221]
+12-31 14:11:24.053  2005  2452 I netstats_wifi_sample: [244186,934,185857,1147,243652,939,169911,1136,243652,939,169911,1136,1546236684221]
+12-31 14:11:24.536  2005  2214 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236684703]
+12-31 14:11:24.536  2005  2214 I netstats_wifi_sample: [248541,945,189985,1163,248001,950,173815,1152,248001,950,173815,1152,1546236684703]
+12-31 14:11:24.561  2005  2336 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236684728]
+12-31 14:11:24.561  2005  2336 I netstats_wifi_sample: [248840,948,190124,1165,248288,953,173926,1154,248288,953,173926,1154,1546236684728]
+12-31 14:11:24.582  2005  2054 I am_uid_running: 10008
+12-31 14:11:24.607  2005  2054 I am_proc_start: [0,6636,10008,com.android.cellbroadcastreceiver,broadcast,com.android.cellbroadcastreceiver/.CellBroadcastReceiver]
+12-31 14:11:24.631  2005  3055 I am_proc_bound: [0,6636,com.android.cellbroadcastreceiver]
+12-31 14:11:24.721  2005  3055 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236684888]
+12-31 14:11:24.721  2005  3055 I netstats_wifi_sample: [252648,958,193041,1180,252084,963,176633,1169,251781,960,176426,1166,1546236684888]
+12-31 14:11:24.729  2005  2052 I am_pss  : [5292,10021,com.android.vending,19647488,16449536,0]
+12-31 14:11:24.787  2005  3087 I am_uid_running: 10043
+12-31 14:11:24.803  2005  3087 I am_proc_start: [0,6665,10043,com.android.dialer,service,com.android.dialer/com.android.voicemail.impl.OmtpService]
+12-31 14:11:24.805  2005  2028 I am_uid_running: 10005
+12-31 14:11:24.822  2005  2028 I am_proc_start: [0,6679,10005,com.android.providers.calendar,broadcast,com.android.providers.calendar/.CalendarProviderBroadcastReceiver]
+12-31 14:11:24.826  2005  2447 I am_proc_bound: [0,6665,com.android.dialer]
+12-31 14:11:24.834  2005  2447 I am_uid_active: 10043
+12-31 14:11:24.845  2005  3087 I am_proc_bound: [0,6679,com.android.providers.calendar]
+12-31 14:11:24.878  2005  2052 I am_pss  : [5500,10033,com.ted.number,17772544,16637952,0]
+12-31 14:11:24.958  2005  2447 I am_kill : [0,6032,com.google.android.ext.services,906,empty #17]
+12-31 14:11:24.999  2005  2452 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236685166]
+12-31 14:11:24.999  2005  2452 I netstats_wifi_sample: [257621,973,195611,1197,257045,978,178965,1186,253520,975,178631,1182,1546236685166]
+12-31 14:11:25.057  2005  2447 I am_proc_died: [0,6032,com.google.android.ext.services,906,17]
+12-31 14:11:25.058  2005  2447 I am_uid_stopped: 10016
+12-31 14:11:25.089  2005  2452 I am_kill : [0,6139,com.zui.contacts,906,empty #17]
+12-31 14:11:25.111  2005  2052 I am_pss  : [5555,10033,com.ted.number:remote,6864896,5365760,0]
+12-31 14:11:25.186  2005  2029 I netstats_mobile_sample: [33974,116,16442,139,33974,116,15330,139,33974,116,15330,139,1546236685353]
+12-31 14:11:25.186  2005  2029 I netstats_wifi_sample: [258261,979,196219,1201,257677,984,179517,1190,257677,984,179517,1190,1546236685353]
+12-31 14:11:25.207  2005  2452 I am_proc_died: [0,6139,com.zui.contacts,906,17]
+12-31 14:11:25.207  2005  2452 I am_uid_stopped: 10042
+12-31 14:11:25.288  2005  3087 I am_kill : [0,4000,com.google.process.gapps,906,empty #17]
+12-31 14:11:25.317  2005  3087 I am_proc_died: [0,4000,com.google.process.gapps,906,17]
+12-31 14:11:25.466  4217  4341 I contacts_aggregation: [1546236685466,-5]
+12-31 14:11:25.467  4217  4341 I contacts_aggregation: [1,5]
+12-31 14:11:25.680  4217  4229 I contacts_aggregation: [1546236685680,-11]
+12-31 14:11:25.683  4217  4229 I contacts_aggregation: [3,11]
+12-31 14:11:26.147  4217  4228 I contacts_aggregation: [1546236686147,-25]
+12-31 14:11:26.154  4217  4228 I contacts_aggregation: [6,25]
+12-31 14:11:26.331  4217  4228 I contacts_aggregation: [1546236686330,-5]
+12-31 14:11:26.332  4217  4228 I contacts_aggregation: [2,5]
+12-31 14:11:26.562  2005  2052 I am_pss  : [5735,10089,com.qualcomm.qti.StatsPollManager,2534400,2068480,0]
+12-31 14:11:28.283  2005  2336 I am_wtf  : [0,2005,system_server,-1,ActivityManager,Sending non-protected broadcast PNW.dismiss_warning_dialog from system 2264:com.android.systemui/u0a58 pkg com.android.systemui]
+12-31 14:11:28.331  2005  2052 I am_pss  : [5840,1000,com.qualcomm.qti.smcinvokepkgmgr,2610176,2150400,0]
+12-31 14:11:28.365  2005  2052 I am_pss  : [5789,1000,com.qualcomm.qti.qdma,4876288,4161536,0]
+12-31 14:11:28.391  2005  2052 I am_pss  : [5818,1000,com.qualcomm.qti.smq,2958336,2490368,0]
+12-31 14:11:28.413  2005  2052 I am_pss  : [5772,1000,com.qualcomm.qti.callenhancement,2701312,2228224,0]
+12-31 14:11:29.653  4369  4369 I auditd  : type=1400 audit(0.0:479): avc: denied { read } for comm="BuglyThread-3" name="type" dev="sysfs" ino=37066 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+12-31 14:11:29.663  4369  4369 I auditd  : type=1400 audit(0.0:480): avc: denied { search } for comm="BuglyThread-3" name="usb" dev="sysfs" ino=35473 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_usb_supply:s0 tclass=dir permissive=0
+12-31 14:11:29.663  4369  4369 I auditd  : type=1400 audit(0.0:481): avc: denied { search } for comm="BuglyThread-3" name="battery" dev="sysfs" ino=35570 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs_battery_supply:s0 tclass=dir permissive=0
+12-31 14:11:29.663  4369  4369 I auditd  : type=1400 audit(0.0:482): avc: denied { read } for comm="BuglyThread-3" name="uptime" dev="proc" ino=4026532087 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+12-31 14:11:35.005  2005  2447 I am_kill : [0,6160,com.zui.datadebugger,906,empty #17]
+12-31 14:11:35.023  2005  2452 I am_proc_died: [0,6160,com.zui.datadebugger,906,17]
+12-31 14:11:35.041  2005  3087 I am_proc_died: [0,5555,com.ted.number:remote,900,17]
+12-31 14:11:35.048  2005  2052 I am_pss  : [3529,10218,com.jd.jrapp,25338880,19488768,0]
+12-31 14:11:35.082  2005  2052 I am_pss  : [3155,10049,com.zui.launcher,113221632,106864640,0]
+12-31 14:11:41.018  2005  2052 I am_pss  : [6278,10057,com.zui.simcontacts,3319808,2674688,0]
+12-31 14:11:41.052  2005  2052 I am_pss  : [6174,10051,com.zui.mms,19318784,17690624,0]
+12-31 14:11:41.076  2005  2052 I am_pss  : [6243,10098,com.zui.networkaclr,3474432,2957312,0]
+12-31 14:11:41.612  2005  2052 I am_pss  : [6342,10112,com.zui.calendar,11793408,10600448,0]
+12-31 14:11:41.656  2005  2052 I am_pss  : [3257,10013,android.process.media,11498496,10248192,0]
+12-31 14:11:45.970  2005  2054 I am_kill : [0,3575,com.zui.homesettings,906,empty #17]
+12-31 14:11:45.971  2005  2054 I am_kill : [0,6189,com.android.keychain,906,empty #18]
+12-31 14:11:45.991  2005  2447 I am_proc_died: [0,3575,com.zui.homesettings,906,17]
+12-31 14:11:45.991  2005  2447 I am_uid_stopped: 10048
+12-31 14:11:46.002  2005  2452 I am_proc_died: [0,6189,com.android.keychain,906,17]
+12-31 14:11:46.028  2005  2052 I am_pss  : [6418,10025,com.lenovo.leos.appstore,54838272,52793344,0]
+12-31 14:11:46.069  2005  2052 I am_pss  : [6059,1000,com.zui.antitheft,7356416,6262784,0]
+12-31 14:11:48.085  2005  3087 I am_kill : [0,6313,com.zui.zroaming,906,empty #17]
+12-31 14:11:48.107  2005  3087 I am_proc_died: [0,6313,com.zui.zroaming,906,17]
+12-31 14:11:48.108  2005  3087 I am_uid_stopped: 10094
+12-31 14:11:48.115  2005  2052 I am_pss  : [6328,1002,com.android.bluetooth,4230144,3670016,0]
